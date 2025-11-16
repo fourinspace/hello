@@ -59,9 +59,7 @@ const images = [
   categories: ["product design", "digital"],
 },
 
-   { src: "https://lh3.googleusercontent.com/d/1zUrGQs70B-vTUnw0fBHeXn4ocoe2qy5T=w1200", 
-    alt: "Ballsy", 
-    categories: ["product", "print"] },
+
 
   { src: "https://lh3.googleusercontent.com/d/1ImWqmE7xA0CBkEe3uJnudWVErv_zBnCP=w1200", 
    alt: "Taste", 
