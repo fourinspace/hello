@@ -20,10 +20,6 @@ const images = [
   categories: ["print", "digital"]
 },
 
-  { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
-    alt: "MAU",
-    categories: ["digital"]
-},
  { src: "https://lh3.googleusercontent.com/d/1-IfFsOem4_uFoWHL7x0gUz-Nkk8s-Bu8=w1200", 
     alt: "30DII",
     categories: ["print"],
