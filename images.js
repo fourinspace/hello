@@ -53,7 +53,11 @@ const images = [
     ]
   },
   
-  { src: "https://lh3.googleusercontent.com/d/1lsUV17h-65keB9IKgg_cJvifitwEC6Vi=w1200", alt: "Plauat", categories: ["product"] },
+{
+  src: "https://lh3.googleusercontent.com/d/1SO1zNKqRqplLpv-RzrRggZBUPDRL3FvG=w1200",
+  alt: "PLAUAT App",
+  categories: ["product design", "digital"],
+},
 
    { src: "https://lh3.googleusercontent.com/d/1zUrGQs70B-vTUnw0fBHeXn4ocoe2qy5T=w1200", 
     alt: "Ballsy", 
