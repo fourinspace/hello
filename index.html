@@ -72,6 +72,14 @@
       transition: max-height 0.3s ease;
     }
     .has-dropdown.open .dropdown { max-height: 800px; }
+    
+    /* NEW: Normalize spacing for text inside about/contact dropdowns */
+    .dropdown-content-text {
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+    }
+
 
     /* Work dropdown specific styling */
     #workItem .dropdown {
@@ -384,13 +392,13 @@
           <li class="has-dropdown" id="aboutItem">
             <button type="button" class="menu-btn" aria-expanded="false">about</button>
             <div class="dropdown">
-              Reno Voet known as: four is a Creative Technologist based in Seoul, South Korea. I do brand development, prototyping, and storytelling, using whatever tools it takes to shape the beauty your brand deserves. From print to motion, I love to build experiences that feel alive, playful, and unforgettable.With a diverse portfolio build up in the America, Netherlands, Korea and Japan.
+                <p class="dropdown-content-text">Reno Voet known as: four is a Creative Technologist based in Seoul, South Korea. I do brand development, prototyping, and storytelling, using whatever tools it takes to shape the beauty your brand deserves. From print to motion, I love to build experiences that feel alive, playful, and unforgettable.With a diverse portfolio build up in the America, Netherlands, Korea and Japan.</p>
             </div>
           </li>
           <li class="has-dropdown" id="contactItem">
             <button type="button" class="menu-btn" aria-expanded="false">contact</button>
             <div class="dropdown">
-              Shohei Shohei Shigematsu is a partner at OMA based out of the New York office, who leads the firm's diverse portfolio in the Americas and Japan.
+                <p class="dropdown-content-text">Shohei Shohei Shigematsu is a partner at OMA based out of the New York office, who leads the firm's diverse portfolio in the Americas and Japan.</p>
             </div>
           </li>
         </ul>
