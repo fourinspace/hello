@@ -66,7 +66,7 @@ const images = [
  
   { src: "https://lh3.googleusercontent.com/d/1I7S1LB7e2FaIMDz9Zz6Fm5Ipwug2uqmF=w1200", alt: "Kiiroo-2", categories: ["product"] },
   { src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
-  alt: "Glass_toooth",
+  alt: "Glass_tooth",
   categories: ["digital"]
 },
   
@@ -106,7 +106,17 @@ const images = [
       "https://lh3.googleusercontent.com/d/1454G-GZ77GPREoBRoTGywmF1jpAUKKtG=w1200"
     ]
   },
- 
+{
+  src: "https://lh3.googleusercontent.com/d/1TK4f5gCsP7BFOEADC_S95nVC12_NWpZj=w1200",
+  alt: "Polyspot",
+  categories: ["product design", "digital"],
+  group: [
+       "https://lh3.googleusercontent.com/d/1qnW1cFUEsYKX1RdIM5KOKpBahhViYXez=w1200",
+       "https://lh3.googleusercontent.com/d/1s_MAOrC2y8wTnnRGB-eUiq2uy1eQVCNa=w1200",
+       "https://lh3.googleusercontent.com/d/1L7bKdukUgHA5o4YoOIjUcXXyLxxz73hF=w1200",
+       "https://lh3.googleusercontent.com/d/1bib0w_76GibZlfhs1QqmXeViudPwg710=w1200"
+  ]
+    },
  { src: "https://lh3.googleusercontent.com/d/12yh7OmQPdnBEHswGDG6-6HqUXB12-zOM=w1200", 
     alt: "Smile", 
     categories: ["digital"], 
@@ -126,16 +136,6 @@ const images = [
   categories: ["digital"] 
 }, 
 
-{
-  src: "https://lh3.googleusercontent.com/d/1TK4f5gCsP7BFOEADC_S95nVC12_NWpZj=w1200",
-  alt: "Polyspot",
-  categories: ["product design", "digital"],
-  group: [
-       "https://lh3.googleusercontent.com/d/1qnW1cFUEsYKX1RdIM5KOKpBahhViYXez=w1200",
-       "https://lh3.googleusercontent.com/d/1s_MAOrC2y8wTnnRGB-eUiq2uy1eQVCNa=w1200",
-       "https://lh3.googleusercontent.com/d/1L7bKdukUgHA5o4YoOIjUcXXyLxxz73hF=w1200",
-       "https://lh3.googleusercontent.com/d/1bib0w_76GibZlfhs1QqmXeViudPwg710=w1200"
-  ]
   },
 
  { src: "https://lh3.googleusercontent.com/d/1YcTTIG9o4bVfpRpZZuYYuSYrFLfWHCUb=w1200",
