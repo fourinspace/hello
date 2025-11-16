@@ -10,18 +10,16 @@ const images = [
        "https://lh3.googleusercontent.com/d/1Gok3Xtfp5AlziPR1qrk6ymQ9Wst0lDpo=w1200",
        "https://lh3.googleusercontent.com/d/16Y4GYduVN7xhi7iRkzT084_pMzhi889A=w1200"
     ]
-},
-  { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
-    alt: "MAU",
-    categories: ["digital"]
-},
-
-    },
+  },
  { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
   alt: "Think", 
   categories: ["print", "digital"]
 },
-   
+
+  { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
+    alt: "MAU",
+    categories: ["digital"]
+},
  { src: "https://lh3.googleusercontent.com/d/1-IfFsOem4_uFoWHL7x0gUz-Nkk8s-Bu8=w1200", 
     alt: "30DII",
     categories: ["print"],
