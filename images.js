@@ -147,10 +147,10 @@ const images = [
   { src: "https://lh3.googleusercontent.com/d/1citj8Zu7j3JEzF-B7kczQiYVg8n-PNqo=w1200", alt: "Stella", categories: ["print", "digital"] 
   },
    
-   { src: "https://lh3.googleusercontent.com/d/1zUrGQs70B-vTUnw0fBHeXn4ocoe2qy5T=w1200", 
-    alt: "Ballsy", 
-    categories: ["product", "print"] 
-   },
+   {  src: "https://lh3.googleusercontent.com/d/1YkYFncv1MhxGUAwpY1LcoO-XM__HQp1D=w1200",
+  alt: "Ballsy",
+  categories: ["product design", "digital"]
+},
 ];
 
 // Function to filter images based on category
