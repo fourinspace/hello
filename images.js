@@ -33,11 +33,13 @@ const images = [
       "https://lh3.googleusercontent.com/d/1ky8YgZzDVj4IVouvlf8YLbRjOJimsqn-=w1200",
       "https://lh3.googleusercontent.com/d/1hkt52J-1Ec2temdDGcoGBzZaicaoiO2n=w1200"
     ]
-  },
+},
+  {
+  src: "https://lh3.googleusercontent.com/d/1NhuBTVYigNda4gX7SjaG1AnYxWhwlfoe=w1200",
+  alt: "Space Invaders",
+  categories: ["print", "digital"],
+}
 
-{ src: "https://lh3.googleusercontent.com/d/1mUnx_T1G3QDxo7NadiR7pqzjxocGXiyi=w1200",
-  alt: "Invaders",
-  categories: ["digital"]
 },
   
   { src: "https://lh3.googleusercontent.com/d/1PXKgsT4wJTHYtTM6AEO2JrviddGzrMlH=w1200", 
