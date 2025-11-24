@@ -3,12 +3,8 @@ const images = [
    {src: "https://lh3.googleusercontent.com/d/10LwSeuG7sroVKfqwUuLMffJcnFifg8pt=w1200",  alt: "DTA App",
   categories: ["product design", "digital"],
    group: [
-       "https://lh3.googleusercontent.com/d/1KS_yxQ51nW9AnfmysBbYxzPaLG54wuYi=w1200",
-       "https://lh3.googleusercontent.com/d/1RyzMQq0e5dyYPf3EZDkVFuIYATfpSeDD=w1200",
-       "https://lh3.googleusercontent.com/d/16yUb4m2XDdxHsWYjZnBiHKHBSlPrjEJA=w1200",
-       "https://lh3.googleusercontent.com/d/1d9NwnWaF9-nbDloklOrrxuxOzZl6WUc9=w1200",
-       "https://lh3.googleusercontent.com/d/1Gok3Xtfp5AlziPR1qrk6ymQ9Wst0lDpo=w1200",
-       "https://lh3.googleusercontent.com/d/16Y4GYduVN7xhi7iRkzT084_pMzhi889A=w1200"
+      "https://lh3.googleusercontent.com/d/1j5qKxY-NJVM0dgIREv00jfPGrFuFK2Ey=w1200",
+       "https://lh3.googleusercontent.com/d/1b01BD7GA7y1bbSf_aWEnE8WTX8aaG6xm=w1200"
     ]
   },
     { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
