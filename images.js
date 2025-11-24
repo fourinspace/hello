@@ -98,9 +98,7 @@ const images = [
   alt: "Sit App",
   categories: ["product design", "digital"],
   group: [
-      "https://lh3.googleusercontent.com/d/1koB1zcoezKIPbB28EczcRm_v7S9znZxz=w1200",
-      "https://lh3.googleusercontent.com/d/1kZJG5wFO4JTpoOlDGO_xEtoGoI15lbeL=w1200",
-      "https://lh3.googleusercontent.com/d/1454G-GZ77GPREoBRoTGywmF1jpAUKKtG=w1200"
+      "https://lh3.googleusercontent.com/d/1LwfVVH0btkOtS2m9MvfRTa4UFudwmLuu=w1200"
     ]
   },
    {
