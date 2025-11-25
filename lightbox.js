@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxContainer = document.querySelector('.lightbox-container');
   const lightboxImagesContainer = document.querySelector('.lightbox-images-container');
 
+  // NEW: reference to the existing text field
+  const lightboxTextInner = document.querySelector('.lightbox-text-inner');
+
   // Inject Open Sans font into the lightbox
   const fontLink = document.createElement('link');
   fontLink.rel = 'stylesheet';
@@ -28,6 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Look up clicked image in images.js
       const imgObj = images.find(img => img.src === clickedSrc);
+
+      // NEW: set the text from images.js (fallback empty)
+      if (imgObj && imgObj.text) {
+        lightboxTextInner.textContent = imgObj.text;
+      } else {
+        lightboxTextInner.textContent = "";
+      }
 
       // Only use the group defined in images.js
       let sources = [];
