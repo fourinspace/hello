@@ -1,8 +1,9 @@
 // List of images/videos/GIFs
 const images = [
-   {src: "https://lh3.googleusercontent.com/d/10LwSeuG7sroVKfqwUuLMffJcnFifg8pt=w1200",  alt: "DTA App",
-  categories: ["product design", "digital"],
-   group: [
+   {src: "https://lh3.googleusercontent.com/d/10LwSeuG7sroVKfqwUuLMffJcnFifg8pt=w1200",  
+    alt: "DTA App",
+    categories: ["product design", "digital"],
+    group: [
       "https://lh3.googleusercontent.com/d/1j5qKxY-NJVM0dgIREv00jfPGrFuFK2Ey=w1200",
        "https://lh3.googleusercontent.com/d/1b01BD7GA7y1bbSf_aWEnE8WTX8aaG6xm=w1200"
      ],
@@ -102,7 +103,10 @@ const images = [
   categories: ["product design", "digital"],
   group: [
       "https://lh3.googleusercontent.com/d/1LwfVVH0btkOtS2m9MvfRTa4UFudwmLuu=w1200"
-    ]
+  ],
+  text: "SIT IS A PEER-TO-PEER MOBILE APPLICATION FOR HIGH-DENSITY, UNRESERVED TRANSIT. IT ALLOWS EXITING PASSENGERS TO LIST THEIR HIGHLY DESIRED SEAT IN REAL-TIME. STANDING RIDERS CAN PURCHASE THE IMMEDIATE RIGHT OF OCCUPANCY SECURELY VIA THE APP. USING PRECISE LOCATION AND TIME TRACKING, SIT COORDINATES THE EXCHANGE.
+ELIMINATE THE STRESS OF STANDING AND GUARANTEE COMFORT FOR THE FINAL LEG. SECURE, DISCREET PAYMENT ENSURES A SEAMLESS TRANSITION BETWEEN RIDERS. SIT TURNS AN OCCUPIED SPOT INTO A GUARANTEED, PURCHASABLE SEAT.
+"
   },
    {
   src: "https://lh3.googleusercontent.com/d/1TK4f5gCsP7BFOEADC_S95nVC12_NWpZj=w1200",
