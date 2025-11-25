@@ -5,11 +5,14 @@ const images = [
    group: [
       "https://lh3.googleusercontent.com/d/1j5qKxY-NJVM0dgIREv00jfPGrFuFK2Ey=w1200",
        "https://lh3.googleusercontent.com/d/1b01BD7GA7y1bbSf_aWEnE8WTX8aaG6xm=w1200"
-    ]
+     ],
+  text: "This is the custom text that will appear in the lightbox."
   },
-    { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
+    
+   { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
     alt: "MAU",
     categories: ["digital"]
+    
 },
  { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
   alt: "Think", 
