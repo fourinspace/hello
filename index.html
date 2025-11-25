@@ -414,17 +414,14 @@
         </div>
         </div>
 
-      <div class="content-area" id="contentArea">
+        <div class="content-area" id="contentArea">
         <div class="align-wrapper">
-         <div class="video-wrapper">
-  <iframe
-    src="https://drive.google.com/file/d/1clewOU5OZsV_BLdnPySEzTLgPcKqYNTN/preview"
-    width="100%"
-    height="100%"
-    allow="autoplay;"
-    allowfullscreen>
-  </iframe>
-</div>
+          <div class="video-wrapper">
+            <video autoplay muted loop>
+              <source src="https://framerusercontent.com/assets/CtSYQwWgD3v3HDe3HMRPnHbvGOk.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
     </main>
@@ -459,7 +456,7 @@
       const contentArea = document.getElementById('contentArea');
       const homeBtn = document.getElementById('homeBtn');
       const workBtn = document.querySelector('#workItem .menu-btn');
-      const initialVideoURL = "https://drive.google.com/file/d/1clewOU5OZsV_BLdnPySEzTLgPcKqYNTN/preview";
+      const initialVideoURL = "https://framerusercontent.com/assets/CtSYQwWgD3v3HDe3HMRPnHbvGOk.mp4";
       const sidebarWorkSubmenus = document.querySelectorAll('#workItem .submenu-btn'); // Existing sidebar buttons
       const headerWorkMenu = document.getElementById('headerWorkMenu'); // Reference to the NEW header menu container
       const headerWorkSubmenus = document.querySelectorAll('#headerWorkMenu .submenu-btn'); // NEW header buttons
