@@ -201,7 +201,10 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1YkYFncv1MhxGUAwpY1LcoO-XM__HQp1D=w1200",
         alt: "Ballsy",
         categories: ["product design", "digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+         group: ["https://lh3.googleusercontent.com/d/1Ju2KsoA5I0OlfOrzHaRF5akVRP1tVzhX=w1200",
+            "https://lh3.googleusercontent.com/d/1JQHTK-jCUzwsI-y8GUysUdD_UtffmBgQ=w1200",
+            "https://lh3.googleusercontent.com/d/1IhQnt0sLuffeyHGbR3eAbPc-YXcmqeln=w1200"
+        ],
         text: "22 - This is the custom text that will appear in the lightbox."
     },
 ]; // <--- This bracket and semicolon were missing!
