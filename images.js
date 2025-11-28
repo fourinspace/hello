@@ -1,18 +1,12 @@
 
 // List of images/videos/GIFs
 const images = [
- { src: "https://lh3.googleusercontent.com/d/1qGEuOLUfCVHcJ0-aFrzOeLOWjAvX2uTS=w1200",
-   alt: "Tunnel",
-   categories: ["digital"],
-   group: [
-       "https://lh3.googleusercontent.com/d/1KS_yxQ51nW9AnfmysBbYxzPaLG54wuYi=w1200",
-       "https://lh3.googleusercontent.com/d/1RyzMQq0e5dyYPf3EZDkVFuIYATfpSeDD=w1200",
-       "https://lh3.googleusercontent.com/d/16yUb4m2XDdxHsWYjZnBiHKHBSlPrjEJA=w1200",
-       "https://lh3.googleusercontent.com/d/1d9NwnWaF9-nbDloklOrrxuxOzZl6WUc9=w1200",
-       "https://lh3.googleusercontent.com/d/1Gok3Xtfp5AlziPR1qrk6ymQ9Wst0lDpo=w1200",
-       "https://lh3.googleusercontent.com/d/16Y4GYduVN7xhi7iRkzT084_pMzhi889A=w1200"
-    ]
-  },
+{ src: "https://lh3.googleusercontent.com/d/10LwSeuG7sroVKfqwUuLMffJcnFifg8pt=w1200",
+        alt: "DTA App",
+        categories: ["product design", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1j5qKxY-NJVM0dgIREv00jfPGrFuFK2Ey=w1200", "https://lh3.googleusercontent.com/d/1b01BD7GA7y1bbSf_aWEnE8WTX8aaG6xm=w1200"],
+        text: "Type: Phone Application \nFunction: Developer \n\nDTA: Digital Traveling Agency redefines global exploration. It connects you to a network of real-world travelers, delivering real-time experiences directly. DTA utilizes global Local Explorers for micro-trips—hiring them for personalized, live-streamed tours of their immediate area (e.g., a Parisian coffee shop). Alternatively, become a Global Contributor to fund DTA Travelers on macro-journeys (like backpacking Asia), receiving exclusive content and influencing their travels with real-time tips. DTA is a social network for genuine, real-time exploration. You gain the experience; they gain support. Travel the world without moving."
+    },
  { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
   alt: "Think",
   categories: ["print", "digital"]
