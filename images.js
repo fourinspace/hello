@@ -35,9 +35,8 @@ const images = [
             "https://lh3.googleusercontent.com/d/1FZkyoX1s0bDIRWeEHrgwfNtbylAyjZzS=w1200",
             "https://lh3.googleusercontent.com/d/1rbu6THSuW3DzBIBJXI0MmVY48Zpjsbjy=w1200",
             "https://lh3.googleusercontent.com/d/1ky8YgZzDVj4IVouvlf8YLbRjOJimsqn-=w1200",
-            "https://lh3.googleusercontent.com/d/1hkt52J-1Ec2temdDGcoGBzZaicaoiO2n=w1200"
-        ],
-        text: "4- This is the custom text that will appear in the lightbox."
+            "https://lh3.googleusercontent.com/d/1hkt52J-1Ec2temdDGcoGBzZaicaoiO2n=w1200"],
+        text: "30DII (Thirty Days Immediate Inference) is not merely a project; it is a crucible of creativity. Over the span of a singular, intense month, artists spanning the globe are drawn into a shared, accelerated current. Each day unfurls a new task, a concentrated pulse challenging their immediate intuition and craft. These urgent responses—these visual murmurs and written whispers—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose.The core inquiry of 30DII lies in this deliberate compression: to sculpt art within a pressure cooker, to witness the raw, divergent bloom of creation when time, that most relentless of muses, demands an immediate answer."
     },
     {
         src: "https://lh3.googleusercontent.com/d/1NhuBTVYigNda4gX7SjaG1AnYxWhwlfoe=w1200",
@@ -131,8 +130,13 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1H8_lRyafliGnAOtn20LoAbxz8h3Ztz0n=w1200",
         alt: "Artinus",
         categories: ["digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "15 - This is the custom text that will appear in the lightbox."
+        group: ["https://lh3.googleusercontent.com/d/1FytNOBzF0bw0S6d_gKEQ-1dClOrSR5re=w1200",
+                "https://lh3.googleusercontent.com/d/1zz4wqKeLOYuZhZlbisOi9TxBmMk_OS-p=w1200",
+                "https://lh3.googleusercontent.com/d/19ADZm7PbqWLpa8gxWnMokGWQO_NJCa16=w1200",
+                "https://lh3.googleusercontent.com/d/1Ebf65QNHchQq-f7WTDgwRprC05RNEihY=w1200",
+                "https://lh3.googleusercontent.com/d/11ufqfJGMWDLxoFRRqKKUStFEJfsFma_v=w1200",
+                "https://lh3.googleusercontent.com/d/1sE0uhr9OvYCG9nkugEu0fO-bRta9UrhC=w1200"],
+        text: "Artinus is a coffee appliance brand created through a collaboration between the Italian espresso machine manufacturer Officine Brugnetti and the South Korean coffee company JM Coffee Group. The brand focuses on high-end espresso machines and related accessories, aiming to combine Italian tradition and innovation with Korean design and technological needs."
     },
 
     {
@@ -143,8 +147,7 @@ const images = [
             "https://lh3.googleusercontent.com/d/1JQHTK-jCUzwsI-y8GUysUdD_UtffmBgQ=w1200",
             "https://lh3.googleusercontent.com/d/1IhQnt0sLuffeyHGbR3eAbPc-YXcmqeln=w1200"
         ],
-        text: "SIT IS A PEER-TO-PEER MOBILE APPLICATION FOR HIGH-DENSITY, UNRESERVED TRANSIT. IT ALLOWS EXISTING PASSENGERS TO LIST THEIR HIGHLY DESIRED SEAT IN REAL-TIME. STANDING RIDERS CAN PURCHASE THE IMMEDIATE RIGHT OF OCCUPANCY SECURELY VIA THE APP. USING PRECISE LOCATION AND TIME TRACKING, SIT COORDINATES THE EXCHANGE. ELIMINATE THE STRESS OF STANDING AND GUARANTEE COMFORT FOR THE FINAL LEG. SECURE, DISCREET PAYMENT ENSURES A SEAMLESS TRANSITION BETWEEN RIDERS. SIT TURNS AN OCCUPIED SPOT INTO A GUARANTEED, PURCHASABLE SEAT"
-    },
+text: "SIT is a peer-to-peer mobile application for high-density, unreserved transit. It allows existing passengers to list their highly desired seat in real-time. Standing riders can purchase the immediate right of occupancy securely via the app. Using precise location and time tracking, SIT coordinates the exchange. Eliminate the stress of standing and guarantee comfort for the final leg. Secure, discreet payment ensures a seamless transition between riders. SIT turns an occupied spot into a guaranteed, purchasable seat"},
 
     {
         src: "https://lh3.googleusercontent.com/d/1TK4f5gCsP7BFOEADC_S95nVC12_NWpZj=w1200",
