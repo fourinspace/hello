@@ -37,10 +37,13 @@ const images = [
         text: "30DII (Thirty Days Immediate Inference) is not merely a project; it is a crucible of creativity. Over the span of a singular, intense month, artists spanning the globe are drawn into a shared, accelerated current. Each day unfurls a new task, a concentrated pulse challenging their immediate intuition and craft. These urgent responses—these visual murmurs and written whispers—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose.The core inquiry of 30DII lies in this deliberate compression: to sculpt art within a pressure cooker, to witness the raw, divergent bloom of creation when time, that most relentless of muses, demands an immediate answer."
   },
 
-{ src: "https://lh3.googleusercontent.com/d/1mUnx_T1G3QDxo7NadiR7pqzjxocGXiyi=w1200",
-  alt: "Invaders",
-  categories: ["digital"]
-},
+{
+        src: "https://lh3.googleusercontent.com/d/1NhuBTVYigNda4gX7SjaG1AnYxWhwlfoe=w1200",
+        alt: "Space Invaders",
+        categories: ["print", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "Space Invaders, the iconic 1978 arcade phenomenon, specializes in delivering relentless alien invasion and groundbreaking electronic challenge. Its core philosophy, driven by a visually simple, pixelated aesthetic, centers on addictive gameplay and escalating tension for endless replayability. Emphasizing immediate action, strategic cover, and iconic sound, Space Invaders features descending alien formations and laser cannons in a stark, unforgettable battleground, enhancing your reflexes with timeless thrills and a foundational gaming experience."
+    },
   
   { src: "https://lh3.googleusercontent.com/d/1PXKgsT4wJTHYtTM6AEO2JrviddGzrMlH=w1200", 
    alt: "Flags", 
