@@ -106,7 +106,7 @@ const images = [
     },
 
     {
-        src: "https://lh3.googleusercontent.com/d/1OEubZ1zimJZ9ozsBWBDxrglqhQyElMQd=w1200",
+        src: "https://lh3.googleusercontent.com/d/1emihWoLZYVphvLgbJI8iJ5udMeI93F0Y=w1200",
         alt: "Nike",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
