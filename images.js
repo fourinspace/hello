@@ -22,19 +22,19 @@ const images = [
         text: "3 - This is the custom text that will appear in the lightbox."
     },
         
- { src: "https://lh3.googleusercontent.com/d/1-IfFsOem4_uFoWHL7x0gUz-Nkk8s-Bu8=w1200", 
-    alt: "30DII",
-    categories: ["print"],
-    group: [
-      "https://lh3.googleusercontent.com/d/15FTIUfeVcqKgX-D7WNouuUOAzcj-2VRC=w1200",
-      "https://lh3.googleusercontent.com/d/1kEALBwWjwUwCIXXtLOPIFRjghW6zi3gD=w1200",
-      "https://lh3.googleusercontent.com/d/1eGDP41pcqUYDwj1IMc4LDK_IY5lMxOUj=w1200",
-      "https://lh3.googleusercontent.com/d/1o9Yoe_mLvZtMifItUwLA02WHEtrz-oss=w1200",
-      "https://lh3.googleusercontent.com/d/1FZkyoX1s0bDIRWeEHrgwfNtbylAyjZzS=w1200",
-      "https://lh3.googleusercontent.com/d/1rbu6THSuW3DzBIBJXI0MmVY48Zpjsbjy=w1200",
-      "https://lh3.googleusercontent.com/d/1ky8YgZzDVj4IVouvlf8YLbRjOJimsqn-=w1200",
-      "https://lh3.googleusercontent.com/d/1hkt52J-1Ec2temdDGcoGBzZaicaoiO2n=w1200"
-    ]
+{
+        src: "https://lh3.googleusercontent.com/d/1-IfFsOem4_uFoWHL7x0gUz-Nkk8s-Bu8=w1200",
+        alt: "30DII",
+        categories: ["print"],
+        group: ["https://lh3.googleusercontent.com/d/15FTIUfeVcqKgX-D7WNouuUOAzcj-2VRC=w1200",
+            "https://lh3.googleusercontent.com/d/1kEALBwWjwUwCIXXtLOPIFRjghW6zi3gD=w1200",
+            "https://lh3.googleusercontent.com/d/1eGDP41pcqUYDwj1IMc4LDK_IY5lMxOUj=w1200",
+            "https://lh3.googleusercontent.com/d/1o9Yoe_mLvZtMifItUwLA02WHEtrz-oss=w1200",
+            "https://lh3.googleusercontent.com/d/1FZkyoX1s0bDIRWeEHrgwfNtbylAyjZzS=w1200",
+            "https://lh3.googleusercontent.com/d/1rbu6THSuW3DzBIBJXI0MmVY48Zpjsbjy=w1200",
+            "https://lh3.googleusercontent.com/d/1ky8YgZzDVj4IVouvlf8YLbRjOJimsqn-=w1200",
+            "https://lh3.googleusercontent.com/d/1hkt52J-1Ec2temdDGcoGBzZaicaoiO2n=w1200"],
+        text: "30DII (Thirty Days Immediate Inference) is not merely a project; it is a crucible of creativity. Over the span of a singular, intense month, artists spanning the globe are drawn into a shared, accelerated current. Each day unfurls a new task, a concentrated pulse challenging their immediate intuition and craft. These urgent responses—these visual murmurs and written whispers—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose.The core inquiry of 30DII lies in this deliberate compression: to sculpt art within a pressure cooker, to witness the raw, divergent bloom of creation when time, that most relentless of muses, demands an immediate answer."
   },
 
 { src: "https://lh3.googleusercontent.com/d/1mUnx_T1G3QDxo7NadiR7pqzjxocGXiyi=w1200",
