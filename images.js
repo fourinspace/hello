@@ -81,7 +81,13 @@ const images = [
         text: "KIIROO pioneers adult entertainment technology, developing remote devices for synchronised intimate experiences. Their innovation transmits real-time touch sensations, often synced with video or other users, to bridge the physical gap in relationships. KIIROO empowers users to explore new dimensions of virtual intimacy, whether solo, with a partner, or with content creators, making connections feel more real and enhancing sexual experiences through technology."
     },
  
-  { src: "https://lh3.googleusercontent.com/d/1I7S1LB7e2FaIMDz9Zz6Fm5Ipwug2uqmF=w1200", alt: "Kiiroo-2", categories: ["product"] },
+{
+        src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
+        alt: "Glass_tooth",
+        categories: ["digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "10 - This is the custom text that will appear in the lightbox."
+    },
         
   { src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
   alt: "Glass_toooth",
