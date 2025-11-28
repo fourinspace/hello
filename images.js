@@ -45,18 +45,18 @@ const images = [
         text: "Space Invaders, the iconic 1978 arcade phenomenon, specializes in delivering relentless alien invasion and groundbreaking electronic challenge. Its core philosophy, driven by a visually simple, pixelated aesthetic, centers on addictive gameplay and escalating tension for endless replayability. Emphasizing immediate action, strategic cover, and iconic sound, Space Invaders features descending alien formations and laser cannons in a stark, unforgettable battleground, enhancing your reflexes with timeless thrills and a foundational gaming experience."
     },
   
-  { src: "https://lh3.googleusercontent.com/d/1PXKgsT4wJTHYtTM6AEO2JrviddGzrMlH=w1200", 
-   alt: "Flags", 
-   categories: ["3d"], 
-   group: [
-     "https://lh3.googleusercontent.com/d/1z5hlLZvZ7E89QKkdwBOegW3u45UeAJqx=w1200",
-     "https://lh3.googleusercontent.com/d/1Q6AyJgcSu3-xw_O13a8bnkl_QyzhelBz=w1200",
-     "https://lh3.googleusercontent.com/d/1mMb37RFB4RQGqMT5fSKAE4F4wnL8RpW1=w1200",
-     "https://lh3.googleusercontent.com/d/1v-qeoTEP0I1Vq0XCyH_FyVOKF4ILfqfR=w1200",
-     "https://lh3.googleusercontent.com/d/14e7R4cbk4nc7pmW5EXUKt16GlX3auofQ=w1200",
-     "https://lh3.googleusercontent.com/d/1rHPUDFseJP4AEG13pNXGXgOvaN-zBWmx=w1200"
-    ]
-  },
+  {
+        src: "https://lh3.googleusercontent.com/d/1PXKgsT4wJTHYtTM6AEO2JrviddGzrMlH=w1200",
+        alt: "Jolly Roger, Waves The White Flag",
+        categories: ["3d"],
+        group: ["https://lh3.googleusercontent.com/d/1z5hlLZvZ7E89QKkdwBOegW3u45UeAJqx=w1200",
+            "https://lh3.googleusercontent.com/d/1Q6AyJgcSu3-xw_O13a8bnkl_QyzhelBz=w1200",
+            "https://lh3.googleusercontent.com/d/1mMb37RFB4RQGqMT5fSKAE4F4wnL8RpW1=w1200",
+            "https://lh3.googleusercontent.com/d/1v-qeoTEP0I1Vq0XCyH_FyVOKF4ILfqfR=w1200",
+            "https://lh3.googleusercontent.com/d/14e7R4cbk4nc7pmW5EXUKt16GlX3auofQ=w1200",
+            "https://lh3.googleusercontent.com/d/1rHPUDFseJP4AEG13pNXGXgOvaN-zBWmx=w1200" ],
+        text: "Jolly Roger, Waves the White Flag is not merely a collection of civic emblems; it is a crucible of profound cultural inquiry. Over the span of its singular, intense exploration, this book draws the reader into a shared, accelerated current, where each state flag unfurls a new task—a concentrated pulse challenging our immediate intuition about national identity and its aesthetic codification. These urgent responses—these visual murmurs and symbolic whispers of history—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose. The core inquiry of Jolly Roger, Waves the White Flag lies in this deliberate compression: to sculpt meaning within the pressure cooker of vexillological critique, to witness the raw, divergent bloom of civic self-perception when history, that most relentless of muses, demands an immediate answer regarding the banners we fly."
+    },
   
   { src: "https://lh3.googleusercontent.com/d/1lsUV17h-65keB9IKgg_cJvifitwEC6Vi=w1200", alt: "Plauat", categories: ["product"] },
 
