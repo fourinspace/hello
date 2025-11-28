@@ -7,10 +7,13 @@ const images = [
         group: ["https://lh3.googleusercontent.com/d/1j5qKxY-NJVM0dgIREv00jfPGrFuFK2Ey=w1200", "https://lh3.googleusercontent.com/d/1b01BD7GA7y1bbSf_aWEnE8WTX8aaG6xm=w1200"],
         text: "Type: Phone Application \nFunction: Developer \n\nDTA: Digital Traveling Agency redefines global exploration. It connects you to a network of real-world travelers, delivering real-time experiences directly. DTA utilizes global Local Explorers for micro-trips—hiring them for personalized, live-streamed tours of their immediate area (e.g., a Parisian coffee shop). Alternatively, become a Global Contributor to fund DTA Travelers on macro-journeys (like backpacking Asia), receiving exclusive content and influencing their travels with real-time tips. DTA is a social network for genuine, real-time exploration. You gain the experience; they gain support. Travel the world without moving."
     },
- { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
-  alt: "Think",
-  categories: ["print", "digital"]
-},
+{ src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
+        alt: "MAU",
+        categories: ["digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "MAU (마우), a Korean footwear brand, specializes in comfortable, lightweight, and stylish casual sneakers. Their core philosophy, driven by a visually clean, contemporary aesthetic, centers on feather-light comfort and modern, minimalist design for everyday wear. Emphasizing simplicity, versatility, and ergonomic design, MAU shoes feature a unique 'MAU SOLE' and breathable materials in subtle, versatile tones, enhancing your look with sophisticated elegance and a natural walking feel."
+
+    },
 
   { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
     alt: "MAU",
