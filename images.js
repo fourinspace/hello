@@ -190,7 +190,19 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "Stella Maris elevates every diver's experience with Korean digital precision. Guiding you with timeless elegance, our watches blend celestial inspiration with masterful craftsmanship. Crafted for those who navigate life's currents with unwavering style, Stella Maris timepieces are engineered for exceptional accuracy, enduring beauty, and reborn precision."
     },
-        { src: "https://lh3.googleusercontent.com/d/1F2-rWxNQC7JJAib07GLS7u2whIhXVWeZ=w1200", alt: "30DII-2", categories: ["digital"] },
+
+        
+{
+        src: "https://lh3.googleusercontent.com/d/1YkYFncv1MhxGUAwpY1LcoO-XM__HQp1D=w1200",
+        alt: "Ballsy",
+        categories: ["product design", "digital"],
+         group: ["https://lh3.googleusercontent.com/d/1Ju2KsoA5I0OlfOrzHaRF5akVRP1tVzhX=w1200",
+            "https://lh3.googleusercontent.com/d/1JQHTK-jCUzwsI-y8GUysUdD_UtffmBgQ=w1200",
+            "https://lh3.googleusercontent.com/d/1IhQnt0sLuffeyHGbR3eAbPc-YXcmqeln=w1200"
+        ],
+        text: "BALLSY fuels every ambition, delivering a surge of energy to elevate your potential. Guiding you to defy limits, our drink blends essential vitality with peak performance. Crafted for those who navigate life's challenges with unwavering drive, BALLSY gives you spirit for extraordinary feats, unwavering focus, and limitless inspiration."
+    },
+
 ];
 
 // Function to filter images based on category
