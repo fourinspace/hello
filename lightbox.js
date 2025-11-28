@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxContainer = document.querySelector('.lightbox-container');
   const lightboxImagesContainer = document.querySelector('.lightbox-images-container');
 
-  // Inject Open Sans font into the lightbox
+  // RESTORED — needed or JS breaks!
+  const lightboxTextInner = document.querySelector('.lightbox-text-inner');
+
+  // Inject Open Sans font
   const fontLink = document.createElement('link');
   fontLink.rel = 'stylesheet';
   fontLink.href = 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
@@ -16,6 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     body, button, input, textarea {
       font-family: 'Open Sans', sans-serif !important;
     }
+    .lightbox-video {
+      width: 90%;
+      max-width: 1200px;
+      aspect-ratio: 16/9;
+      display: block;
+      margin: 0 auto;
+      border: none;
+    }
   `;
   document.head.appendChild(style);
 
@@ -23,35 +34,62 @@ document.addEventListener('DOMContentLoaded', () => {
     if (event.data.type === 'openLightbox') {
       const clickedSrc = event.data.src;
 
-      // Clear old content
+      // Clear previous content
       lightboxImagesWrapper.innerHTML = "";
 
-      // Look up clicked image in images.js
       const imgObj = images.find(img => img.src === clickedSrc);
 
-      // Only use the group defined in images.js
-      let sources = [];
-      if (imgObj && imgObj.group && imgObj.group.length > 0) {
-        sources = imgObj.group; // exact order you define
+      // Set text
+      if (imgObj && imgObj.text) {
+        lightboxTextInner.textContent = imgObj.text;
       } else {
-        return; // if no group is defined, do nothing
+        lightboxTextInner.textContent = "";
       }
 
-      // Render all sources in order
-      sources.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.classList.add('lightbox-img');
-        lightboxImagesWrapper.appendChild(img);
+      // Load group
+      let sources = [];
+      if (imgObj && imgObj.group && imgObj.group.length > 0) {
+        sources = imgObj.group;
+      } else {
+        return;
+      }
 
-        img.onload = function() {
-          // Only set orientation from the first image in the group
+      sources.forEach((src, index) => {
+        let element;
+
+        const isVideo = src.includes("player.vimeo.com");
+
+        if (isVideo) {
+          // Vimeo iframe used INSTEAD of an <img>
+          element = document.createElement('iframe');
+          element.src = src;
+          element.classList.add('lightbox-video');
+          element.setAttribute('allow', 'autoplay; fullscreen');
+        } else {
+          // Image
+          element = document.createElement('img');
+          element.src = src;
+          element.classList.add('lightbox-img');
+        }
+
+        lightboxImagesWrapper.appendChild(element);
+
+        // Orientation logic only for images
+        if (!isVideo) {
+          element.onload = function() {
+            if (index === 0) {
+              const isLandscape = this.naturalWidth > this.naturalHeight;
+              lightboxContainer.classList.remove('landscape', 'portrait');
+              lightboxContainer.classList.add(isLandscape ? 'landscape' : 'portrait');
+            }
+          };
+        } else {
+          // Videos always treated as landscape
           if (index === 0) {
-            const isLandscape = this.naturalWidth > this.naturalHeight;
             lightboxContainer.classList.remove('landscape', 'portrait');
-            lightboxContainer.classList.add(isLandscape ? 'landscape' : 'portrait');
+            lightboxContainer.classList.add('landscape');
           }
-        };
+        }
       });
 
       lightbox.style.display = 'block';
@@ -59,11 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  lightboxClose.onclick = function() {
+  lightboxClose.onclick = () => {
     lightbox.style.display = 'none';
   };
 
-  window.onclick = function(event) {
+  window.onclick = (event) => {
     if (event.target === lightbox) {
       lightbox.style.display = 'none';
     }
