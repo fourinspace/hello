@@ -184,8 +184,13 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
         text: "Prompt is a fragmented, poetic, and philosophical exploration of themes surrounding defiance, consequence, nature's cruelty, societal rituals, and the cycles of existence. It employs repetition, rhetorical questions, and vivid, often disturbing, imagery to create a sense of unease and a questioning of established norms. The language shifts between declarative statements, narrative descriptions (the bible, the ortolan ritual, the cuckoo), and introspective or challenging questions. At times defiant, at others descriptive, and often laden with a dark, almost cynical undercurrent regarding human and natural behaviors."
     },
  
-  { src: "https://lh3.googleusercontent.com/d/1citj8Zu7j3JEzF-B7kczQiYVg8n-PNqo=w1200", alt: "Stella", categories: ["print", "digital"] },
-  { src: "https://lh3.googleusercontent.com/d/1F2-rWxNQC7JJAib07GLS7u2whIhXVWeZ=w1200", alt: "30DII-2", categories: ["digital"] },
+{ src: "https://lh3.googleusercontent.com/d/1citj8Zu7j3JEzF-B7kczQiYVg8n-PNqo=w1200",
+        alt: "Stella Maris",
+        categories: ["print", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "Stella Maris elevates every diver's experience with Korean digital precision. Guiding you with timeless elegance, our watches blend celestial inspiration with masterful craftsmanship. Crafted for those who navigate life's currents with unwavering style, Stella Maris timepieces are engineered for exceptional accuracy, enduring beauty, and reborn precision."
+    },
+        { src: "https://lh3.googleusercontent.com/d/1F2-rWxNQC7JJAib07GLS7u2whIhXVWeZ=w1200", alt: "30DII-2", categories: ["digital"] },
 ];
 
 // Function to filter images based on category
