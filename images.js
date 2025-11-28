@@ -158,7 +158,7 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
     },
 
     { src: "https://lh3.googleusercontent.com/d/12yh7OmQPdnBEHswGDG6-6HqUXB12-zOM=w1200",
-        alt: "Smile",
+        alt: "F*ck That Smile",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200",
             "https://lh3.googleusercontent.com/d/1kjSC1Cq3ZJyi6uBe1CF1yWqAla9l_-d8=w1200",
@@ -166,12 +166,12 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
             "https://lh3.googleusercontent.com/d/1FEBL8nfwI6VgErRb95TB0B0vGjB7Jxu2=w1200",
             "https://lh3.googleusercontent.com/d/1MHcfbajeA9-m3nAckdwFLcxsG-HwFz4r=w1200",
             "https://lh3.googleusercontent.com/d/1pqqaSgQbtqtSytEhxJzlrJA0hgFDWbvt=w1200" ],
-        text: "A personal odyssey. A defiant declaration. 'f*ck that smile' is a raw, unfiltered. view of self, rejecting external expectations of happiness in favor of an intensely personal truth. This is the artist's unyielding promise: to provide their own happiness, on their own terms. Visually captured amidst the rugged, introspective mountainscapes around Castlenuovo Di Garfagnana and the relentless, anonymous pulse of Tokyo's busiest districts, 'f*ck that smile' unfolds as a stark, arresting narrative. We follow an alien, stranded on Earth after its vessel dramatically crashes. This extraterrestrial wanderer embarks on a poignant quest, drifting through disparate landscapes, searching for a place to truly belong, to adapt, yet finding no solace in either nature's grandeur or humanity's crowded isolation. More than a musical journey, 'f*ck that smile' is a profound expedition into an inner struggle. It is the alien's physical displacement mirroring a universal emotional rift—the battle to reconcile internal chaos with an unyielding external world. Each frame, each note, echoes the defiant spirit of its title, inviting the audience not to smile, but to truly see and feel the beautiful, difficult path to authentic self-acceptance. f*ck that smile: The only smile that matters is your own."
+     text: "'f*ck that smile' is a personal odyssey: a defiant, raw view of self, rejecting external happiness for intensely personal truth. The artist's promise is self-provided happiness. Set in the introspective mountains of Castlenuovo Di Garfagnana and busy Tokyo, it follows an alien stranded on Earth after a crash. This wanderer seeks belonging but finds no solace. More than music, it's a profound inner struggle—physical displacement mirroring emotional rift. Each frame echoes defiance, inviting audiences to see the difficult path to authentic self-acceptance. f*ck that smile: The only smile that matters is your own."
     },
 
 
     { src: "https://lh3.googleusercontent.com/d/1j9CGeOUhwHnYE1JNWCfQlpXl1ATJZWTh=w1200",
-        alt: "Bikeride",
+        alt: "Yaksu",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "19 - This is the custom text that will appear in the lightbox."
@@ -199,7 +199,7 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
             "https://lh3.googleusercontent.com/d/1JQHTK-jCUzwsI-y8GUysUdD_UtffmBgQ=w1200",
             "https://lh3.googleusercontent.com/d/1IhQnt0sLuffeyHGbR3eAbPc-YXcmqeln=w1200"
         ],
-        text: "22 - This is the custom text that will appear in the lightbox."
+        text: "BALLSY fuels every ambition, delivering a surge of energy to elevate your potential. Guiding you to defy limits, our drink blends essential vitality with peak performance. Crafted for those who navigate life's challenges with unwavering drive, BALLSY gives you spirit for extraordinary feats, unwavering focus, and limitless inspiration."
     },
 ]; // <--- This bracket and semicolon were missing!
 
