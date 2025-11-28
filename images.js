@@ -13,7 +13,7 @@ const images = [
         alt: "MAU",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "2 - This is the custom text that will appear in the lightbox."
+        text: "MAU (마우), a Korean footwear brand, specializes in comfortable, lightweight, and stylish casual sneakers. Their core philosophy, driven by a visually clean, contemporary aesthetic, centers on feather-light comfort and modern, minimalist design for everyday wear. Emphasizing simplicity, versatility, and ergonomic design, MAU shoes feature a unique 'MAU SOLE' and breathable materials in subtle, versatile tones, enhancing your look with sophisticated elegance and a natural walking feel."
 
     },
     {
@@ -43,7 +43,7 @@ const images = [
         alt: "Space Invaders",
         categories: ["print", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "5 - This is the custom text that will appear in the lightbox."
+        text: "Space Invaders, the iconic 1978 arcade phenomenon, specializes in delivering relentless alien invasion and groundbreaking electronic challenge. Its core philosophy, driven by a visually simple, pixelated aesthetic, centers on addictive gameplay and escalating tension for endless replayability. Emphasizing immediate action, strategic cover, and iconic sound, Space Invaders features descending alien formations and laser cannons in a stark, unforgettable battleground, enhancing your reflexes with timeless thrills and a foundational gaming experience."
     },
 
     {
@@ -70,10 +70,10 @@ const images = [
 
 
     {src: "https://lh3.googleusercontent.com/d/1ImWqmE7xA0CBkEe3uJnudWVErv_zBnCP=w1200",
-        alt: "Kink",
+        alt: "Kinx",
         categories: ["print", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "8 - This is the custom text that will appear in the lightbox."
+        text: "KINX, a leading Internet eXchange (IX) provider and data center operator in Korea, offers critical backbone infrastructure. Serving ISPs, content, cloud providers, and enterprises, not consumers, KINX emphasizes extensive domestic and international network connections. As Korea's intelligent internet backbone, KINX delivers seamless, direct interconnection at its neutral IX, accelerating network performance. Beyond bandwidth, KINX guarantees unwavering stability and continuous operation with robust, redundant data center and IX services, securing your digital foundation with resilient infrastructure engineered for maximum uptime and peace of mind."
     },
 
     {
@@ -143,9 +143,9 @@ const images = [
         categories: ["product design", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1Ju2KsoA5I0OlfOrzHaRF5akVRP1tVzhX=w1200",
             "https://lh3.googleusercontent.com/d/1JQHTK-jCUzwsI-y8GUysUdD_UtffmBgQ=w1200",
-            "https://lh3.googleusercontent.com/d/1IhQnt0sLuffeyHGbR3eAbPc-YXcmqeln=w1200"
-        ],
-text: "SIT is a peer-to-peer mobile application for high-density, unreserved transit. It allows existing passengers to list their highly desired seat in real-time. Standing riders can purchase the immediate right of occupancy securely via the app. Using precise location and time tracking, SIT coordinates the exchange. Eliminate the stress of standing and guarantee comfort for the final leg. Secure, discreet payment ensures a seamless transition between riders. SIT turns an occupied spot into a guaranteed, purchasable seat"},
+            "https://lh3.googleusercontent.com/d/1IhQnt0sLuffeyHGbR3eAbPc-YXcmqeln=w1200" ],
+text: "SIT is a peer-to-peer mobile application for high-density, unreserved transit. It allows existing passengers to list their highly desired seat in real-time. Standing riders can purchase the immediate right of occupancy securely via the app. Using precise location and time tracking, SIT coordinates the exchange. Eliminate the stress of standing and guarantee comfort for the final leg. Secure, discreet payment ensures a seamless transition between riders. SIT turns an occupied spot into a guaranteed, purchasable seat"
+    },
 
     {
         src: "https://lh3.googleusercontent.com/d/1TK4f5gCsP7BFOEADC_S95nVC12_NWpZj=w1200",
@@ -154,9 +154,8 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
         group: ["https://lh3.googleusercontent.com/d/1qnW1cFUEsYKX1RdIM5KOKpBahhViYXez=w1200",
             "https://lh3.googleusercontent.com/d/1s_MAOrC2y8wTnnRGB-eUiq2uy1eQVCNa=w1200",
             "https://lh3.googleusercontent.com/d/1L7bKdukUgHA5o4YoOIjUcXXyLxxz73hF=w1200",
-            "https://lh3.googleusercontent.com/d/1bib0w_76GibZlfhs1QqmXeViudPwg710=w1200"
-        ],
-        text: "17 - This is the custom text that will appear in the lightbox."
+            "https://lh3.googleusercontent.com/d/1bib0w_76GibZlfhs1QqmXeViudPwg710=w1200" ],
+        text: "Polyspot, Spotify's iconic modern audio innovation, specializes in delivering personal music experiences and groundbreaking tactile interaction. Its core philosophy, driven by a visually clean, contemporary aesthetic, centers on intuitive control and seamless access for endless listening pleasure. Emphasizing 360-degree sound from its unique 'spots,' a vibrant circular display, and integrated Wi-Fi, Polyspot features a direct connection to Spotify's library, enhancing your daily rhythm with feather-light freedom and a foundational sound experience. Get yours free with an annual Spotify Premium subscription."
     },
 
     {
@@ -168,9 +167,8 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
             "https://lh3.googleusercontent.com/d/1cGf6mqDp5e4s6QV0IZwA7nvfin1FuDOi=w1200",
             "https://lh3.googleusercontent.com/d/1FEBL8nfwI6VgErRb95TB0B0vGjB7Jxu2=w1200",
             "https://lh3.googleusercontent.com/d/1MHcfbajeA9-m3nAckdwFLcxsG-HwFz4r=w1200",
-            "https://lh3.googleusercontent.com/d/1pqqaSgQbtqtSytEhxJzlrJA0hgFDWbvt=w1200"
-        ],
-        text: "18 - This is the custom text that will appear in the lightbox."
+            "https://lh3.googleusercontent.com/d/1pqqaSgQbtqtSytEhxJzlrJA0hgFDWbvt=w1200" ],
+        text: "A personal odyssey. A defiant declaration. 'f*ck that smile' is a raw, unfiltered. view of self, rejecting external expectations of happiness in favor of an intensely personal truth. This is the artist's unyielding promise: to provide their own happiness, on their own terms. Visually captured amidst the rugged, introspective mountainscapes around Castlenuovo Di Garfagnana and the relentless, anonymous pulse of Tokyo's busiest districts, 'f*ck that smile' unfolds as a stark, arresting narrative. We follow an alien, stranded on Earth after its vessel dramatically crashes. This extraterrestrial wanderer embarks on a poignant quest, drifting through disparate landscapes, searching for a place to truly belong, to adapt, yet finding no solace in either nature's grandeur or humanity's crowded isolation. More than a musical journey, 'f*ck that smile' is a profound expedition into an inner struggle. It is the alien's physical displacement mirroring a universal emotional rift—the battle to reconcile internal chaos with an unyielding external world. Each frame, each note, echoes the defiant spirit of its title, inviting the audience not to smile, but to truly see and feel the beautiful, difficult path to authentic self-acceptance. f*ck that smile: The only smile that matters is your own."
     },
 
 
