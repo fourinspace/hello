@@ -109,7 +109,8 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1emihWoLZYVphvLgbJI8iJ5udMeI93F0Y=w1200",
         alt: "Nike",
         categories: ["digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+          group: ["https://player.vimeo.com/video/1141425366?background=1&autoplay=1&loop=1&muted=1"],
+
         text: "The Nike x Louis Vuitton collaboration, driven by Virgil Abloh, fused luxury fashion with street culture. Abloh reimagined iconic Nike Air Force 1s with Louis Vuitton craftsmanship, released posthumously. His tragic loss left a profound void, but this partnership stands as a powerful, final testament to his genius and unparalleled impact on design, blending aesthetics and challenging conventions."
     },
 
