@@ -55,8 +55,7 @@ const images = [
             "https://lh3.googleusercontent.com/d/1mMb37RFB4RQGqMT5fSKAE4F4wnL8RpW1=w1200",
             "https://lh3.googleusercontent.com/d/1v-qeoTEP0I1Vq0XCyH_FyVOKF4ILfqfR=w1200",
             "https://lh3.googleusercontent.com/d/14e7R4cbk4nc7pmW5EXUKt16GlX3auofQ=w1200",
-            "https://lh3.googleusercontent.com/d/1rHPUDFseJP4AEG13pNXGXgOvaN-zBWmx=w1200"
-        ],
+            "https://lh3.googleusercontent.com/d/1rHPUDFseJP4AEG13pNXGXgOvaN-zBWmx=w1200" ],
         text: "Jolly Roger, Waves the White Flag is not merely a collection of civic emblems; it is a crucible of profound cultural inquiry. Over the span of its singular, intense exploration, this book draws the reader into a shared, accelerated current, where each state flag unfurls a new task—a concentrated pulse challenging our immediate intuition about national identity and its aesthetic codification. These urgent responses—these visual murmurs and symbolic whispers of history—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose. The core inquiry of Jolly Roger, Waves the White Flag lies in this deliberate compression: to sculpt meaning within the pressure cooker of vexillological critique, to witness the raw, divergent bloom of civic self-perception when history, that most relentless of muses, demands an immediate answer regarding the banners we fly."
     },
 
@@ -158,8 +157,7 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
         text: "Polyspot, Spotify's iconic modern audio innovation, specializes in delivering personal music experiences and groundbreaking tactile interaction. Its core philosophy, driven by a visually clean, contemporary aesthetic, centers on intuitive control and seamless access for endless listening pleasure. Emphasizing 360-degree sound from its unique 'spots,' a vibrant circular display, and integrated Wi-Fi, Polyspot features a direct connection to Spotify's library, enhancing your daily rhythm with feather-light freedom and a foundational sound experience. Get yours free with an annual Spotify Premium subscription."
     },
 
-    {
-        src: "https://lh3.googleusercontent.com/d/12yh7OmQPdnBEHswGDG6-6HqUXB12-zOM=w1200",
+    { src: "https://lh3.googleusercontent.com/d/12yh7OmQPdnBEHswGDG6-6HqUXB12-zOM=w1200",
         alt: "Smile",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200",
@@ -172,28 +170,25 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
     },
 
 
-    {
-        src: "https://lh3.googleusercontent.com/d/1j9CGeOUhwHnYE1JNWCfQlpXl1ATJZWTh=w1200",
+    { src: "https://lh3.googleusercontent.com/d/1j9CGeOUhwHnYE1JNWCfQlpXl1ATJZWTh=w1200",
         alt: "Bikeride",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "19 - This is the custom text that will appear in the lightbox."
     },
 
-    {
-        src: "https://lh3.googleusercontent.com/d/1YcTTIG9o4bVfpRpZZuYYuSYrFLfWHCUb=w1200",
+    { src: "https://lh3.googleusercontent.com/d/1YcTTIG9o4bVfpRpZZuYYuSYrFLfWHCUb=w1200",
         alt: "Prompt",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "20 - This is the custom text that will appear in the lightbox."
+        text: "Prompt is a fragmented, poetic, and philosophical exploration of themes surrounding defiance, consequence, nature's cruelty, societal rituals, and the cycles of existence. It employs repetition, rhetorical questions, and vivid, often disturbing, imagery to create a sense of unease and a questioning of established norms. The language shifts between declarative statements, narrative descriptions (the bible, the ortolan ritual, the cuckoo), and introspective or challenging questions. At times defiant, at others descriptive, and often laden with a dark, almost cynical undercurrent regarding human and natural behaviors."
     },
 
-    {
-        src: "https://lh3.googleusercontent.com/d/1citj8Zu7j3JEzF-B7kczQiYVg8n-PNqo=w1200",
-        alt: "Stella",
+    { src: "https://lh3.googleusercontent.com/d/1citj8Zu7j3JEzF-B7kczQiYVg8n-PNqo=w1200",
+        alt: "Stella Maris",
         categories: ["print", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "21 - This is the custom text that will appear in the lightbox."
+        text: "Stella Maris elevates every diver's experience with Korean digital precision. Guiding you with timeless elegance, our watches blend celestial inspiration with masterful craftsmanship. Crafted for those who navigate life's currents with unwavering style, Stella Maris timepieces are engineered for exceptional accuracy, enduring beauty, and reborn precision."
     },
 
     {
