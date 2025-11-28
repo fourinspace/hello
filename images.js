@@ -120,10 +120,19 @@ const images = [
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "NextRise is South Korea's major startup conference, designed as a comprehensive platform. It connects startups with investors, corporations, and media to foster innovation, facilitate investment, and promote global collaboration. This event helps ventures, corporate investors, and other innovation stakeholders forge partnerships, secure funding, and gain unparalleled insights, serving as a gateway to the future of innovation."
     },
- 
 
-  { src: "https://lh3.googleusercontent.com/d/1ptX-VRuXA1tcAnu9SbpojjjCTAR7kPuT=w1200", alt: "Aventra Race", categories: ["3d"] },
-
+ {
+        src: "https://lh3.googleusercontent.com/d/1H8_lRyafliGnAOtn20LoAbxz8h3Ztz0n=w1200",
+        alt: "Artinus",
+        categories: ["digital"],
+        group: ["https://lh3.googleusercontent.com/d/1FytNOBzF0bw0S6d_gKEQ-1dClOrSR5re=w1200",
+                "https://lh3.googleusercontent.com/d/1zz4wqKeLOYuZhZlbisOi9TxBmMk_OS-p=w1200",
+                "https://lh3.googleusercontent.com/d/19ADZm7PbqWLpa8gxWnMokGWQO_NJCa16=w1200",
+                "https://lh3.googleusercontent.com/d/1Ebf65QNHchQq-f7WTDgwRprC05RNEihY=w1200",
+                "https://lh3.googleusercontent.com/d/11ufqfJGMWDLxoFRRqKKUStFEJfsFma_v=w1200",
+                "https://lh3.googleusercontent.com/d/1sE0uhr9OvYCG9nkugEu0fO-bRta9UrhC=w1200"],
+        text: "Artinus is a coffee appliance brand created through a collaboration between the Italian espresso machine manufacturer Officine Brugnetti and the South Korean coffee company JM Coffee Group. The brand focuses on high-end espresso machines and related accessories, aiming to combine Italian tradition and innovation with Korean design and technological needs."
+    },
 
  
 { src: "https://lh3.googleusercontent.com/d/1H8_lRyafliGnAOtn20LoAbxz8h3Ztz0n=w1200",
