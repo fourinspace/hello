@@ -113,10 +113,13 @@ const images = [
         text: "The Nike x Louis Vuitton collaboration, driven by Virgil Abloh, fused luxury fashion with street culture. Abloh reimagined iconic Nike Air Force 1s with Louis Vuitton craftsmanship, released posthumously. His tragic loss left a profound void, but this partnership stands as a powerful, final testament to his genius and unparalleled impact on design, blending aesthetics and challenging conventions."
     },
 
-  { src: "https://lh3.googleusercontent.com/d/1OEubZ1zimJZ9ozsBWBDxrglqhQyElMQd=w1200",
-  alt: "Nike",
-  categories: ["digital"]
-   },
+  {
+        src: "https://lh3.googleusercontent.com/d/1jt1a1GyDPq9OeYrgfxcVIXMTK3md0Sbl=w1200",
+        alt: "Next Rise",
+        categories: ["product design", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "NextRise is South Korea's major startup conference, designed as a comprehensive platform. It connects startups with investors, corporations, and media to foster innovation, facilitate investment, and promote global collaboration. This event helps ventures, corporate investors, and other innovation stakeholders forge partnerships, secure funding, and gain unparalleled insights, serving as a gateway to the future of innovation."
+    },
  
 
   { src: "https://lh3.googleusercontent.com/d/1ptX-VRuXA1tcAnu9SbpojjjCTAR7kPuT=w1200", alt: "Aventra Race", categories: ["3d"] },
