@@ -48,7 +48,7 @@ const images = [
 
     {
         src: "https://lh3.googleusercontent.com/d/1PXKgsT4wJTHYtTM6AEO2JrviddGzrMlH=w1200",
-        alt: "Flags",
+        alt: "Jolly Roger, Waves The White Flag",
         categories: ["3d"],
         group: ["https://lh3.googleusercontent.com/d/1z5hlLZvZ7E89QKkdwBOegW3u45UeAJqx=w1200",
             "https://lh3.googleusercontent.com/d/1Q6AyJgcSu3-xw_O13a8bnkl_QyzhelBz=w1200",
@@ -57,7 +57,7 @@ const images = [
             "https://lh3.googleusercontent.com/d/14e7R4cbk4nc7pmW5EXUKt16GlX3auofQ=w1200",
             "https://lh3.googleusercontent.com/d/1rHPUDFseJP4AEG13pNXGXgOvaN-zBWmx=w1200"
         ],
-        text: "6 - This is the custom text that will appear in the lightbox."
+        text: "Jolly Roger, Waves the White Flag is not merely a collection of civic emblems; it is a crucible of profound cultural inquiry. Over the span of its singular, intense exploration, this book draws the reader into a shared, accelerated current, where each state flag unfurls a new task—a concentrated pulse challenging our immediate intuition about national identity and its aesthetic codification. These urgent responses—these visual murmurs and symbolic whispers of history—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose. The core inquiry of Jolly Roger, Waves the White Flag lies in this deliberate compression: to sculpt meaning within the pressure cooker of vexillological critique, to witness the raw, divergent bloom of civic self-perception when history, that most relentless of muses, demands an immediate answer regarding the banners we fly."
     },
 
     {
@@ -69,10 +69,8 @@ const images = [
     },
 
 
-
-    {
-        src: "https://lh3.googleusercontent.com/d/1ImWqmE7xA0CBkEe3uJnudWVErv_zBnCP=w1200",
-        alt: "Taste",
+    {src: "https://lh3.googleusercontent.com/d/1ImWqmE7xA0CBkEe3uJnudWVErv_zBnCP=w1200",
+        alt: "Kink",
         categories: ["print", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "8 - This is the custom text that will appear in the lightbox."
@@ -83,11 +81,11 @@ const images = [
         alt: "Kiiroo",
         categories: ["product"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "9 - This is the custom text that will appear in the lightbox."
+        text: "KIIROO pioneers adult entertainment technology, developing remote devices for synchronised intimate experiences. Their innovation transmits real-time touch sensations, often synced with video or other users, to bridge the physical gap in relationships. KIIROO empowers users to explore new dimensions of virtual intimacy, whether solo, with a partner, or with content creators, making connections feel more real and enhancing sexual experiences through technology."
     },
     {
         src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
-        alt: "Glass_toooth",
+        alt: "Glass_tooth",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "10 - This is the custom text that will appear in the lightbox."
@@ -98,14 +96,14 @@ const images = [
         alt: "Jerrican",
         categories: ["print", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "11 - This is the custom text that will appear in the lightbox."
+        text: "Jerrican eyewear elevates your style with contemporary design and timeless elegance. Each meticulously crafted frame offers unparalleled clarity and flair, engineered for lightweight comfort, exceptional durability, and a perfect everyday fit. Discover Jerrican: eyewear that truly reflects your ambition, leisure, and unmistakable charm. See the style. Feel the difference."
     },
     {
         src: "https://lh3.googleusercontent.com/d/1eHsnGo3XG8R9-gItEXHnWNNzkwf4M9Gy=w1200",
-        alt: "Rings",
+        alt: "Guns'N'Roses",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "12 - This is the custom text that will appear in the lightbox."
+        text: "Guns N' Roses, the iconic American hard rock band of the late '80s, soared to fame with Axl Rose, Slash, and Duff McKagan, delivering raw energy and anthems like 'Sweet Child o' Mine.' Their 'Appetite for Destruction' remains a best-seller, solidifying their legendary status. Fans can rejoice as the band will embark on a highly anticipated 2026 tour, promising another high-octane spectacle, delivering timeless hits and fierce energy to their global fanbase."
     },
 
     {
