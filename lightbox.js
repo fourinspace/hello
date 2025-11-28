@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxContainer = document.querySelector('.lightbox-container');
   const lightboxImagesContainer = document.querySelector('.lightbox-images-container');
 
-  // NEW: reference to the existing text field
+  // Reference to existing text field
   const lightboxTextInner = document.querySelector('.lightbox-text-inner');
 
   // Inject Open Sans font into the lightbox
@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
   style.textContent = `
     body, button, input, textarea {
       font-family: 'Open Sans', sans-serif !important;
+    }
+    .lightbox-video {
+      width: 100%;
+      height: 100%;
     }
   `;
   document.head.appendChild(style);
@@ -32,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Look up clicked image in images.js
       const imgObj = images.find(img => img.src === clickedSrc);
 
-      // NEW: set the text from images.js (fallback empty)
+      // Set the text from images.js
       if (imgObj && imgObj.text) {
         lightboxTextInner.textContent = imgObj.text;
       } else {
@@ -42,26 +46,46 @@ document.addEventListener('DOMContentLoaded', () => {
       // Only use the group defined in images.js
       let sources = [];
       if (imgObj && imgObj.group && imgObj.group.length > 0) {
-        sources = imgObj.group; // exact order you define
+        sources = imgObj.group;
       } else {
-        return; // if no group is defined, do nothing
+        return; // nothing to show
       }
 
-      // Render all sources in order
+      // Render all sources in order (image or Vimeo)
       sources.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.classList.add('lightbox-img');
-        lightboxImagesWrapper.appendChild(img);
+        let element;
 
-        img.onload = function() {
-          // Only set orientation from the first image in the group
+        // --- VIMEO DETECTED ---
+        if (src.includes("player.vimeo.com")) {
+          element = document.createElement('iframe');
+          element.src = src;
+          element.frameBorder = "0";
+          element.allow = "autoplay; fullscreen; picture-in-picture";
+          element.setAttribute("allowfullscreen", "");
+          element.classList.add('lightbox-video');
+
+          // Videos are landscape by nature
           if (index === 0) {
-            const isLandscape = this.naturalWidth > this.naturalHeight;
             lightboxContainer.classList.remove('landscape', 'portrait');
-            lightboxContainer.classList.add(isLandscape ? 'landscape' : 'portrait');
+            lightboxContainer.classList.add('landscape');
           }
-        };
+
+        } else {
+          // --- NORMAL IMAGE ---
+          element = document.createElement('img');
+          element.src = src;
+          element.classList.add('lightbox-img');
+
+          element.onload = function() {
+            if (index === 0) {
+              const isLandscape = this.naturalWidth > this.naturalHeight;
+              lightboxContainer.classList.remove('landscape', 'portrait');
+              lightboxContainer.classList.add(isLandscape ? 'landscape' : 'portrait');
+            }
+          };
+        }
+
+        lightboxImagesWrapper.appendChild(element);
       });
 
       lightbox.style.display = 'block';
