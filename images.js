@@ -104,10 +104,14 @@ const images = [
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "Guns N' Roses, the iconic American hard rock band of the late '80s, soared to fame with Axl Rose, Slash, and Duff McKagan, delivering raw energy and anthems like 'Sweet Child o' Mine.' Their 'Appetite for Destruction' remains a best-seller, solidifying their legendary status. Fans can rejoice as the band will embark on a highly anticipated 2026 tour, promising another high-octane spectacle, delivering timeless hits and fierce energy to their global fanbase."
     },
-  { src: "https://lh3.googleusercontent.com/d/1eHsnGo3XG8R9-gItEXHnWNNzkwf4M9Gy=w1200",
-  alt: "Rings",
-  categories: ["digital"]
-}, 
+     {
+        src: "https://lh3.googleusercontent.com/d/1emihWoLZYVphvLgbJI8iJ5udMeI93F0Y=w1200",
+        alt: "Nike",
+        categories: ["digital"],
+          group: ["https://player.vimeo.com/video/1141425366?background=1&autoplay=1&loop=1&muted=1"],
+
+        text: "The Nike x Louis Vuitton collaboration, driven by Virgil Abloh, fused luxury fashion with street culture. Abloh reimagined iconic Nike Air Force 1s with Louis Vuitton craftsmanship, released posthumously. His tragic loss left a profound void, but this partnership stands as a powerful, final testament to his genius and unparalleled impact on design, blending aesthetics and challenging conventions."
+    },
 
   { src: "https://lh3.googleusercontent.com/d/1OEubZ1zimJZ9ozsBWBDxrglqhQyElMQd=w1200",
   alt: "Nike",
