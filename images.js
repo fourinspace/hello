@@ -135,10 +135,15 @@ const images = [
     },
 
  
-{ src: "https://lh3.googleusercontent.com/d/1H8_lRyafliGnAOtn20LoAbxz8h3Ztz0n=w1200",
-  alt: "Artinus",
-  categories: ["digital"]
-},
+{
+        src: "https://lh3.googleusercontent.com/d/1c-H35RgNXWWiEODJMmWdXJYiuzSNBZVx=w1200",
+        alt: "Sit App",
+        categories: ["product design", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1Ju2KsoA5I0OlfOrzHaRF5akVRP1tVzhX=w1200",
+            "https://lh3.googleusercontent.com/d/1JQHTK-jCUzwsI-y8GUysUdD_UtffmBgQ=w1200",
+            "https://lh3.googleusercontent.com/d/1IhQnt0sLuffeyHGbR3eAbPc-YXcmqeln=w1200" ],
+text: "SIT is a peer-to-peer mobile application for high-density, unreserved transit. It allows existing passengers to list their highly desired seat in real-time. Standing riders can purchase the immediate right of occupancy securely via the app. Using precise location and time tracking, SIT coordinates the exchange. Eliminate the stress of standing and guarantee comfort for the final leg. Secure, discreet payment ensures a seamless transition between riders. SIT turns an occupied spot into a guaranteed, purchasable seat"
+    },
   
  {
   src: "https://lh3.googleusercontent.com/d/1J2lm600a_10ipwkGbfwxWwFKuTtoB3h4=w1200",
