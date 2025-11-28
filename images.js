@@ -66,9 +66,12 @@ const images = [
         text: "7 - This is the custom text that will appear in the lightbox."
     },
         
-   { src: "https://lh3.googleusercontent.com/d/1zUrGQs70B-vTUnw0fBHeXn4ocoe2qy5T=w1200", 
-    alt: "Ballsy", 
-    categories: ["product", "print"] },
+     {src: "https://lh3.googleusercontent.com/d/1ImWqmE7xA0CBkEe3uJnudWVErv_zBnCP=w1200",
+        alt: "Kinx",
+        categories: ["print", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "KINX, a leading Internet eXchange (IX) provider and data center operator in Korea, offers critical backbone infrastructure. Serving ISPs, content, cloud providers, and enterprises, not consumers, KINX emphasizes extensive domestic and international network connections. As Korea's intelligent internet backbone, KINX delivers seamless, direct interconnection at its neutral IX, accelerating network performance. Beyond bandwidth, KINX guarantees unwavering stability and continuous operation with robust, redundant data center and IX services, securing your digital foundation with resilient infrastructure engineered for maximum uptime and peace of mind."
+    },
 
   { src: "https://lh3.googleusercontent.com/d/1ImWqmE7xA0CBkEe3uJnudWVErv_zBnCP=w1200", 
    alt: "Taste", 
