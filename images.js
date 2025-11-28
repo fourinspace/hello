@@ -15,10 +15,13 @@ const images = [
 
     },
 
-  { src: "https://lh3.googleusercontent.com/d/1It6_fexSflYCfj_h6NhbUvr6yZZkVF2Y=w1200",
-    alt: "MAU",
-    categories: ["digital"]
-},
+   { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
+        alt: "Think",
+        categories: ["print", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "3 - This is the custom text that will appear in the lightbox."
+    },
+        
  { src: "https://lh3.googleusercontent.com/d/1-IfFsOem4_uFoWHL7x0gUz-Nkk8s-Bu8=w1200", 
     alt: "30DII",
     categories: ["print"],
