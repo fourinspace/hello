@@ -158,10 +158,17 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
     },
 
   
- { src: "https://lh3.googleusercontent.com/d/1j9CGeOUhwHnYE1JNWCfQlpXl1ATJZWTh=w1200", 
-  alt: "Bikeride", 
-  categories: ["digital"] 
-}, 
+ { src: "https://lh3.googleusercontent.com/d/12yh7OmQPdnBEHswGDG6-6HqUXB12-zOM=w1200",
+        alt: "F*ck That Smile",
+        categories: ["digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200",
+            "https://lh3.googleusercontent.com/d/1kjSC1Cq3ZJyi6uBe1CF1yWqAla9l_-d8=w1200",
+            "https://lh3.googleusercontent.com/d/1cGf6mqDp5e4s6QV0IZwA7nvfin1FuDOi=w1200",
+            "https://lh3.googleusercontent.com/d/1FEBL8nfwI6VgErRb95TB0B0vGjB7Jxu2=w1200",
+            "https://lh3.googleusercontent.com/d/1MHcfbajeA9-m3nAckdwFLcxsG-HwFz4r=w1200",
+            "https://lh3.googleusercontent.com/d/1pqqaSgQbtqtSytEhxJzlrJA0hgFDWbvt=w1200" ],
+     text: "'f*ck that smile' is a personal odyssey: a defiant, raw view of self, rejecting external happiness for intensely personal truth. The artist's promise is self-provided happiness. Set in the introspective mountains of Castlenuovo Di Garfagnana and busy Tokyo, it follows an alien stranded on Earth after a crash. This wanderer seeks belonging but finds no solace. More than music, it's a profound inner struggle—physical displacement mirroring emotional rift. Each frame echoes defiance, inviting audiences to see the difficult path to authentic self-acceptance. f*ck that smile: The only smile that matters is your own."
+    },
 
  { src: "https://lh3.googleusercontent.com/d/1Rf-gmo2Rx2ldOu0V98Yjfl7Uh75cjU9b=w1200",
   alt: "Orange",
