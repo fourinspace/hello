@@ -145,29 +145,17 @@ const images = [
 text: "SIT is a peer-to-peer mobile application for high-density, unreserved transit. It allows existing passengers to list their highly desired seat in real-time. Standing riders can purchase the immediate right of occupancy securely via the app. Using precise location and time tracking, SIT coordinates the exchange. Eliminate the stress of standing and guarantee comfort for the final leg. Secure, discreet payment ensures a seamless transition between riders. SIT turns an occupied spot into a guaranteed, purchasable seat"
     },
   
- {
-  src: "https://lh3.googleusercontent.com/d/1J2lm600a_10ipwkGbfwxWwFKuTtoB3h4=w1200",
-  alt: "Magic",
-  categories: ["digital"],
-  group: [
-      "https://lh3.googleusercontent.com/d/1koB1zcoezKIPbB28EczcRm_v7S9znZxz=w1200",
-      "https://lh3.googleusercontent.com/d/1kZJG5wFO4JTpoOlDGO_xEtoGoI15lbeL=w1200",
-      "https://lh3.googleusercontent.com/d/1454G-GZ77GPREoBRoTGywmF1jpAUKKtG=w1200"
-    ]
-  },
  
- { src: "https://lh3.googleusercontent.com/d/12yh7OmQPdnBEHswGDG6-6HqUXB12-zOM=w1200", 
-    alt: "Smile", 
-    categories: ["digital"], 
-    group: [
-      "https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200",
-      "https://lh3.googleusercontent.com/d/1kjSC1Cq3ZJyi6uBe1CF1yWqAla9l_-d8=w1200",
-      "https://lh3.googleusercontent.com/d/1cGf6mqDp5e4s6QV0IZwA7nvfin1FuDOi=w1200",
-      "https://lh3.googleusercontent.com/d/1FEBL8nfwI6VgErRb95TB0B0vGjB7Jxu2=w1200",
-      "https://lh3.googleusercontent.com/d/1MHcfbajeA9-m3nAckdwFLcxsG-HwFz4r=w1200",
-      "https://lh3.googleusercontent.com/d/1pqqaSgQbtqtSytEhxJzlrJA0hgFDWbvt=w1200"
-  ]
-  },
+{
+        src: "https://lh3.googleusercontent.com/d/1TK4f5gCsP7BFOEADC_S95nVC12_NWpZj=w1200",
+        alt: "Polyspot",
+        categories: ["product design", "digital"],
+        group: ["https://lh3.googleusercontent.com/d/1qnW1cFUEsYKX1RdIM5KOKpBahhViYXez=w1200",
+            "https://lh3.googleusercontent.com/d/1s_MAOrC2y8wTnnRGB-eUiq2uy1eQVCNa=w1200",
+            "https://lh3.googleusercontent.com/d/1L7bKdukUgHA5o4YoOIjUcXXyLxxz73hF=w1200",
+            "https://lh3.googleusercontent.com/d/1bib0w_76GibZlfhs1QqmXeViudPwg710=w1200" ],
+        text: "Polyspot, Spotify's iconic modern audio innovation, specializes in delivering personal music experiences and groundbreaking tactile interaction. Its core philosophy, driven by a visually clean, contemporary aesthetic, centers on intuitive control and seamless access for endless listening pleasure. Emphasizing 360-degree sound from its unique 'spots,' a vibrant circular display, and integrated Wi-Fi, Polyspot features a direct connection to Spotify's library, enhancing your daily rhythm with feather-light freedom and a foundational sound experience. Get yours free with an annual Spotify Premium subscription."
+    },
 
   
  { src: "https://lh3.googleusercontent.com/d/1j9CGeOUhwHnYE1JNWCfQlpXl1ATJZWTh=w1200", 
