@@ -5,7 +5,7 @@ const images = [
         alt: "DTA App",
         categories: ["product design", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1j5qKxY-NJVM0dgIREv00jfPGrFuFK2Ey=w1200", "https://lh3.googleusercontent.com/d/1b01BD7GA7y1bbSf_aWEnE8WTX8aaG6xm=w1200"],
-        text: "1 - This is the custom text that will appear in the lightbox."
+        text: "DTA: Digital Traveling Agency redefines global exploration. It connects you to a network of real-world travelers, delivering real-time experiences directly. DTA utilizes global Local Explorers for micro-trips—hiring them for personalized, live-streamed tours of their immediate area (e.g., a Parisian coffee shop). Alternatively, become a Global Contributor to fund DTA Travelers on macro-journeys (like backpacking Asia), receiving exclusive content and influencing their travels with real-time tips. DTA is a social network for genuine, real-time exploration. You gain the experience; they gain support. Travel the world without moving."
     },
 
     {
@@ -111,7 +111,7 @@ const images = [
         alt: "Nike",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "13 - This is the custom text that will appear in the lightbox."
+        text: "The Nike x Louis Vuitton collaboration, driven by Virgil Abloh, fused luxury fashion with street culture. Abloh reimagined iconic Nike Air Force 1s with Louis Vuitton craftsmanship, released posthumously. His tragic loss left a profound void, but this partnership stands as a powerful, final testament to his genius and unparalleled impact on design, blending aesthetics and challenging conventions."
     },
 
 
@@ -120,7 +120,7 @@ const images = [
         alt: "Next Rise",
         categories: ["product design", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "14 - This is the custom text that will appear in the lightbox."
+        text: "NextRise is South Korea's major startup conference, designed as a comprehensive platform. It connects startups with investors, corporations, and media to foster innovation, facilitate investment, and promote global collaboration. This event helps ventures, corporate investors, and other innovation stakeholders forge partnerships, secure funding, and gain unparalleled insights, serving as a gateway to the future of innovation."
     },
 
 
