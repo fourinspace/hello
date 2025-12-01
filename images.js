@@ -59,7 +59,7 @@ const images = [
     },
   
 {
-        src: "https://lh3.googleusercontent.com/d/1SO1zNKqRqplLpv-RzrRggZBUPDRL3FvG=w1200",
+        src: "https://lh3.googleusercontent.com/d/1xhY84kuP02c1qq7ahx5Q44KfFfU-bLJu=w1200",
         alt: "PLAUAT App",
         categories: ["product design", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
