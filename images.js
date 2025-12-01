@@ -1,7 +1,7 @@
 
 // List of images/videos/GIFs
 const images = [
-{ src: "https://lh3.googleusercontent.com/d/10LwSeuG7sroVKfqwUuLMffJcnFifg8pt=w1200",
+{ src: "https://lh3.googleusercontent.com/d/1Y7meayhzN7M3Oy0DrVGiiOEDvYtFDh2a=w1200",
         alt: "DTA App",
         categories: ["product design", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1j5qKxY-NJVM0dgIREv00jfPGrFuFK2Ey=w1200", "https://lh3.googleusercontent.com/d/1b01BD7GA7y1bbSf_aWEnE8WTX8aaG6xm=w1200"],
