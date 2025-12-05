@@ -82,7 +82,8 @@ const images = [
                 "https://lh3.googleusercontent.com/d/1bDkMXuch0bfgdgVajVS-61rsPfQuTyL1=w1200",
                 "https://lh3.googleusercontent.com/d/14AvO4BER4PN2ZRQb4D5Ps_kgSrXIpSXb=w1200", 
                 "https://lh3.googleusercontent.com/d/1kmx4TsbdXMSZ4loN5tyziTZmqJRGrFsZ=w1200",
-               "https://player.vimeo.com/video/1143724363?background=1&autoplay=1&loop=1&muted=1"],
+                "https://player.vimeo.com/video/1143724363?background=1&autoplay=1&loop=1&muted=1"
+                "https://lh3.googleusercontent.com/d/1cOQbTPlctDxmlThR7_zdwWtmBREfaWun=w1200"],
         text: "KIIROO pioneers adult entertainment technology, developing remote devices for synchronised intimate experiences. Their innovation transmits real-time touch sensations, often synced with video or other users, to bridge the physical gap in relationships. KIIROO empowers users to explore new dimensions of virtual intimacy, whether solo, with a partner, or with content creators, making connections feel more real and enhancing sexual experiences through technology."
     },
  
