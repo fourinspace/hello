@@ -10,7 +10,9 @@ const images = [
 { src: "https://lh3.googleusercontent.com/d/1rqYULWhLa2upWY5LLZkEq0kwvcKnwgTC=w1200",
         alt: "MAU",
         categories: ["digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        group: ["https://player.vimeo.com/video/1143851579?background=1&autoplay=1&loop=1&muted=1",
+                "https://player.vimeo.com/video/1143850162?background=1&autoplay=1&loop=1&muted=1",
+                "https://player.vimeo.com/video/1143852429?background=1&autoplay=1&loop=1&muted=1"],
         text: "MAU (마우), a Korean footwear brand, specializes in comfortable, lightweight, and stylish casual sneakers. Their core philosophy, driven by a visually clean, contemporary aesthetic, centers on feather-light comfort and modern, minimalist design for everyday wear. Emphasizing simplicity, versatility, and ergonomic design, MAU shoes feature a unique 'MAU SOLE' and breathable materials in subtle, versatile tones, enhancing your look with sophisticated elegance and a natural walking feel."
 
     },
