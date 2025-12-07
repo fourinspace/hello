@@ -83,7 +83,7 @@
       transition: none; /* No transition for 'about' and 'contact' */
     }
 
-    /* NEW FIX: Contact Item Position - Fixed to the bottom of the sidebar */
+    /* FIX: Contact Item Position - Fixed to the bottom of the sidebar */
     #contactItem {
       list-style: none; /* FIX: Removes the bullet point/dot */
       position: absolute; /* Anchors to the bottom, respecting padding */
@@ -95,16 +95,15 @@
       border-top: 1px solid #eee; /* Optional: adds a visual separator */
     }
 
-    /* NEW FIX: Hide contact block when menu is collapsed */
+    /* FIX: Hide contact block when menu is collapsed */
     .left-menu.collapsed #contactItem {
         display: none;
     }
     
     /* Styling for the QR code image */
     #contactItem .contact-qr-code {
-        /* DOUBLED: Changed from 100px to 200px */
-        max-width: 120px; 
-       height: auto;
+        max-width: 200px; /* Retained: Doubled size from previous request */
+        height: auto;
         display: block; /* Make it a block element to sit on its own line */
         margin-top: 10px;
         margin-bottom: 10px;
@@ -425,7 +424,7 @@
             </div>
           </li>
           <li id="aboutItem"> 
-            <button type="button" class="menu-btn" aria-expanded="false">about</button> 
+            <button type="button" class="menu-btn" aria-expanded="false" aria-label="About"></button> 
             <div class="dropdown">
               Reno Voet known as: four is a Creative Technologist based in Seoul, South Korea. I do brand development, prototyping, and storytelling, using whatever tools it takes to shape the beauty your brand deserves. From print to motion, I love to build experiences that feel alive, playful, and unforgettable.With a diverse portfolio build up in the America, Netherlands, Korea and Japan.
             </div>
@@ -433,7 +432,7 @@
         </ul>
       </nav>
       <li id="contactItem"> 
-        <button type="button" class="menu-btn" aria-expanded="false">contact</button> 
+        <button type="button" class="menu-btn" aria-expanded="false" aria-label="Contact"></button> 
         <div class="dropdown">
           Scan the QR code for my digital business card
           <img src="https://lh3.googleusercontent.com/d/1jP1cNiswJwAFm_4YiYtNA_KngzamV4If=w1200" alt="QR Code" class="contact-qr-code">
@@ -559,6 +558,7 @@
         }
         
         // 3. Handle toggling ONLY if it is a dropdown (i.e., 'work')
+        // Note: 'about' and 'contact' are not .has-dropdown in this version, so this block effectively ignores them
         const item = btn.closest('.has-dropdown');
         if (!item) return; // Ignore clicks on 'hello', 'about', 'contact'
 
@@ -666,24 +666,4 @@
       });
 
       workBtn.addEventListener('click', () => {
-        loadWorkContent('all');
-      });
-      
-      // Bind functionality to BOTH sets of work category buttons
-      const allWorkSubmenus = [...sidebarWorkSubmenus, ...headerWorkSubmenus];
-
-      allWorkSubmenus.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const filter = btn.dataset.filter;
-          loadWorkContent(filter);
-        });
-      });
-
-      // load home content initially
-      loadHomeContent();
-    });
-  </script>
-
-  <script src="lightbox.js"></script>
-</body>
-</html>
+        loadWorkContent
