@@ -42,7 +42,14 @@
       padding: var(--menu-pad) 5px;
     }
 
-    .left-menu nav { margin-top: 100px; }
+    /* UPDATED: Nav now handles the scrollable content above the fixed contact info */
+    .left-menu nav { 
+        margin-top: 100px;
+        /* Calculate available height: 100vh - header margin - bottom padding - contact block height (approx 100px) */
+        height: calc(100vh - 100px - var(--menu-pad)); 
+        overflow-y: auto; /* Make the nav scrollable if content overflows */
+        padding-bottom: 100px; /* Space for the contact block */
+    }
     .left-menu.collapsed nav { display: none; }
     .left-menu ul { list-style: none; padding: 0; margin: 0; }
     .left-menu li { margin-bottom: 6px; position: relative; }
@@ -58,8 +65,14 @@
       display: block;
       user-select: none;
     }
-    /* POINTER REMOVED - DELETED: .has-dropdown .menu-btn::after */
-    /* POINTER ROTATION REMOVED - DELETED: .has-dropdown.open .menu-btn::after */
+    
+    /* REMOVED POINTER CSS */
+    /* .has-dropdown .menu-btn::after {
+      content: "▸";
+      float: right;
+      transition: transform 0.2s ease;
+    }
+    .has-dropdown.open .menu-btn::after { transform: rotate(90deg); } */
     
     .dropdown {
       font-size: 14px;
@@ -73,13 +86,30 @@
     
     .has-dropdown.open .dropdown { max-height: 800px; }
 
-    /* NEW: Force About and Contact content to be visible */
-    #aboutItem .dropdown,
-    #contactItem .dropdown {
-      max-height: 800px; /* Always visible */
+    /* Force About content to be visible */
+    #aboutItem .dropdown {
+      max-height: 800px; 
       overflow: visible;
-      transition: none;
+      transition: none; 
     }
+    
+    /* NEW: Contact Item Position - Must be outside the scrolling NAV for a fixed bottom position */
+    #contactItem {
+      position: absolute;
+      bottom: var(--menu-pad); /* Anchors to the bottom, respecting padding */
+      left: var(--menu-pad); /* Anchors to the left, respecting padding */
+      width: calc(100% - (var(--menu-pad) * 2)); /* Spans the width minus padding */
+      z-index: 10; /* Ensure it is above any scrolling content */
+      padding-top: 10px; /* Separator from content above */
+      border-top: 1px solid #eee; /* Optional: adds a visual separator */
+    }
+    /* Force Contact content to be visible */
+    #contactItem .dropdown {
+      max-height: 800px; 
+      overflow: visible;
+      transition: none; 
+    }
+
 
     /* Work dropdown specific styling */
     #workItem .dropdown {
@@ -394,12 +424,12 @@
               Reno Voet known as: four is a Creative Technologist based in Seoul, South Korea. I do brand development, prototyping, and storytelling, using whatever tools it takes to shape the beauty your brand deserves. From print to motion, I love to build experiences that feel alive, playful, and unforgettable.With a diverse portfolio build up in the America, Netherlands, Korea and Japan.
             </div>
           </li>
-          <li id="contactItem"> <button type="button" class="menu-btn" aria-expanded="true">contact</button> <div class="dropdown">
-              Shohei Shohei Shigematsu is a partner at OMA based out of the New York office, who leads the firm's diverse portfolio in the Americas and Japan.
-            </div>
-          </li>
         </ul>
       </nav>
+      <li id="contactItem"> <button type="button" class="menu-btn" aria-expanded="true">contact</button> <div class="dropdown">
+          Shohei Shohei Shigematsu is a partner at OMA based out of the New York office, who leads the firm's diverse portfolio in the Americas and Japan.
+        </div>
+      </li>
     </aside>
 
     <main class="right-content">
@@ -501,7 +531,7 @@
         }
 
         const item = btn.closest('.has-dropdown');
-        if (!item) return; // This check now ignores the 'about' and 'contact' buttons
+        if (!item) return;
 
         const isOpen = item.classList.contains('open');
         // Close all others
