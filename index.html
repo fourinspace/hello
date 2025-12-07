@@ -58,12 +58,9 @@
       display: block;
       user-select: none;
     }
-    .has-dropdown .menu-btn::after {
-      content: "▸";
-      float: right;
-      transition: transform 0.2s ease;
-    }
-    .has-dropdown.open .menu-btn::after { transform: rotate(90deg); }
+    /* POINTER REMOVED - DELETED: .has-dropdown .menu-btn::after */
+    /* POINTER ROTATION REMOVED - DELETED: .has-dropdown.open .menu-btn::after */
+    
     .dropdown {
       font-size: 14px;
       color: #333;
@@ -73,7 +70,16 @@
       overflow: hidden;
       transition: max-height 0.3s ease;
     }
+    
     .has-dropdown.open .dropdown { max-height: 800px; }
+
+    /* NEW: Force About and Contact content to be visible */
+    #aboutItem .dropdown,
+    #contactItem .dropdown {
+      max-height: 800px; /* Always visible */
+      overflow: visible;
+      transition: none;
+    }
 
     /* Work dropdown specific styling */
     #workItem .dropdown {
@@ -384,15 +390,11 @@
               
             </div>
           </li>
-          <li class="has-dropdown" id="aboutItem">
-            <button type="button" class="menu-btn" aria-expanded="false">about</button>
-            <div class="dropdown">
+          <li id="aboutItem"> <button type="button" class="menu-btn" aria-expanded="true">about</button> <div class="dropdown">
               Reno Voet known as: four is a Creative Technologist based in Seoul, South Korea. I do brand development, prototyping, and storytelling, using whatever tools it takes to shape the beauty your brand deserves. From print to motion, I love to build experiences that feel alive, playful, and unforgettable.With a diverse portfolio build up in the America, Netherlands, Korea and Japan.
             </div>
           </li>
-          <li class="has-dropdown" id="contactItem">
-            <button type="button" class="menu-btn" aria-expanded="false">contact</button>
-            <div class="dropdown">
+          <li id="contactItem"> <button type="button" class="menu-btn" aria-expanded="true">contact</button> <div class="dropdown">
               Shohei Shohei Shigematsu is a partner at OMA based out of the New York office, who leads the firm's diverse portfolio in the Americas and Japan.
             </div>
           </li>
@@ -499,7 +501,7 @@
         }
 
         const item = btn.closest('.has-dropdown');
-        if (!item) return;
+        if (!item) return; // This check now ignores the 'about' and 'contact' buttons
 
         const isOpen = item.classList.contains('open');
         // Close all others
