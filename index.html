@@ -85,8 +85,9 @@
 
     /* NEW FIX: Contact Item Position - Fixed to the bottom of the sidebar */
     #contactItem {
-      position: absolute;
-      bottom: var(--menu-pad); /* Anchors to the bottom, respecting padding */
+      list-style: none; /* FIX: Removes the bullet point/dot */
+      position: absolute; /* Anchors to the bottom, respecting padding */
+      bottom: var(--menu-pad); 
       left: var(--menu-pad); /* Anchors to the left, respecting padding */
       width: calc(100% - (var(--menu-pad) * 2)); /* Spans the width minus padding */
       z-index: 10; /* Ensure it is above any scrolling content */
@@ -103,7 +104,7 @@
     #contactItem .contact-qr-code {
         /* DOUBLED: Changed from 100px to 200px */
         max-width: 120px; 
-        height: auto;
+       height: auto;
         display: block; /* Make it a block element to sit on its own line */
         margin-top: 10px;
         margin-bottom: 10px;
