@@ -20,7 +20,7 @@ const images = [
    { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
         alt: "Think",
         categories: ["print", "digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        group: ["https://lh3.googleusercontent.com/d/1mzN4hOeT3mtJVVryaSldnpfw8573kC2v=w1200"],
         text: "3 - This is the custom text that will appear in the lightbox."
     },
         
