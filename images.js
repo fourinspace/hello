@@ -190,7 +190,9 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
  { src: "https://lh3.googleusercontent.com/d/1YcTTIG9o4bVfpRpZZuYYuSYrFLfWHCUb=w1200",
         alt: "Prompt",
         categories: ["digital"],
-        group: ["https://player.vimeo.com/video/1144478181?background=1&autoplay=1&loop=1&muted=1"],
+        group: ["https://player.vimeo.com/video/1144478181?background=1&autoplay=1&loop=1&muted=1"
+               "https://lh3.googleusercontent.com/d/1Dir9iXbuuzJgt6VYIf0f-bCHCPv_hC_G=w1200" 
+],
         text: "Prompt is a fragmented, poetic, and philosophical exploration of themes surrounding defiance, consequence, nature's cruelty, societal rituals, and the cycles of existence. It employs repetition, rhetorical questions, and vivid, often disturbing, imagery to create a sense of unease and a questioning of established norms. The language shifts between declarative statements, narrative descriptions (the bible, the ortolan ritual, the cuckoo), and introspective or challenging questions. At times defiant, at others descriptive, and often laden with a dark, almost cynical undercurrent regarding human and natural behaviors."
     },
  
