@@ -192,9 +192,9 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
         categories: ["digital"],
         group: ["https://player.vimeo.com/video/1144478181?background=1&autoplay=1&loop=1&muted=1",
                 "https://lh3.googleusercontent.com/d/19PqppU7QHqjQzorsilsDpFot8cb8W0FR=w1200",
-
-               "https://lh3.googleusercontent.com/d/1Dir9iXbuuzJgt6VYIf0f-bCHCPv_hC_G=w1200" 
-],
+               "https://lh3.googleusercontent.com/d/1Dir9iXbuuzJgt6VYIf0f-bCHCPv_hC_G=w1200",
+               "https://lh3.googleusercontent.com/d/13HnpiBlYtXbXsew3tzV6ruMdlOnJayUQ=w1200",
+               "https://lh3.googleusercontent.com/d/1fSq4OQN3c7kVHjQ_gDtTsjhXL1ZJOcaf=w1200"],
         text: "Before PROMPT became a term connected with AI, I made a short Film with that name. Prompt is a fragmented, poetic, and philosophical exploration of themes surrounding defiance, consequence, nature's cruelty, societal rituals, and the cycles of existence. It employs repetition, rhetorical questions, and often disturbing imagery to create a sense of unease and to question established norms. The language shifts between declarative statements, narrative descriptions (the bible, the ortolan ritual, the cuckoo), and introspective or challenging questions. Laden with a dark, almost cynical undercurrent regarding human and natural behaviors."
     },
  
