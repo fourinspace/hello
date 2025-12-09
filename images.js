@@ -21,7 +21,8 @@ const images = [
    { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
         alt: "Think",
         categories: ["print", "digital"],
-        group: ["https://player.vimeo.com/video/1144843108?background=1&autoplay=1&loop=1&muted=0"],
+        group: ["https://player.vimeo.com/video/1144843108?background=1&autoplay=1&loop=1&muted=0",
+               "https://lh3.googleusercontent.com/d/1wCmMpPfgLtoe5-eLQoRZE023ttGRRRLC=w1200"],
         text: "3 - This is the custom text that will appear in the lightbox."
     },
         
