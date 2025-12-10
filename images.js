@@ -161,11 +161,8 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
         src: "https://lh3.googleusercontent.com/d/1TK4f5gCsP7BFOEADC_S95nVC12_NWpZj=w1200",
         alt: "Polyspot",
         categories: ["product design", "digital"],
-        group: ["https://lh3.googleusercontent.com/d/1qnW1cFUEsYKX1RdIM5KOKpBahhViYXez=w1200",
-            "https://lh3.googleusercontent.com/d/1s_MAOrC2y8wTnnRGB-eUiq2uy1eQVCNa=w1200",
-            "https://lh3.googleusercontent.com/d/1L7bKdukUgHA5o4YoOIjUcXXyLxxz73hF=w1200",
-            "https://lh3.googleusercontent.com/d/1bib0w_76GibZlfhs1QqmXeViudPwg710=w1200" ],
-        text: "Polyspot, Spotify's iconic modern audio innovation, specializes in delivering personal music experiences and groundbreaking tactile interaction. Its core philosophy, driven by a visually clean, contemporary aesthetic, centers on intuitive control and seamless access for endless listening pleasure. Emphasizing 360-degree sound from its unique 'spots,' a vibrant circular display, and integrated Wi-Fi, Polyspot features a direct connection to Spotify's library, enhancing your daily rhythm with feather-light freedom and a foundational sound experience. Get yours free with an annual Spotify Premium subscription."
+        group: ["https://lh3.googleusercontent.com/d/1cOc5g4xyQtdvUX7wS3n7AEb1M905VYSr=w1200" ],
+        text: "Polyspot, Spotify's iconic NEW audio innovation, specializes in delivering personal music experiences and groundbreaking tactile interaction. Its core philosophy, driven by a visually clean, contemporary aesthetic, centers on intuitive control and seamless access for endless listening pleasure. Emphasizing 360-degree sound from its unique 'spots,' a vibrant circular display, and integrated Wi-Fi, Polyspot features a direct connection to Spotify's library, enhancing your daily rhythm with feather-light freedom and a foundational sound experience. Get yours free with an annual Spotify Premium subscription."
     },
 
   
