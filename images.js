@@ -71,7 +71,7 @@ const images = [
     },
         
      {
-        src: "https://player.vimeo.com/video/1145174249?background=1&autoplay=1&loop=1&muted=0",
+        src: "https://lh3.googleusercontent.com/d/1QXxHyNux9Uzq6VgLw3eITMVr1D4znbnB=w1200",
         alt: "Kinx",
         categories: ["print", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
