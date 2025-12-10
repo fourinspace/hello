@@ -70,7 +70,8 @@ const images = [
         text: "7 - This is the custom text that will appear in the lightbox."
     },
         
-     {src: "https://lh3.googleusercontent.com/d/1ImWqmE7xA0CBkEe3uJnudWVErv_zBnCP=w1200",
+     {
+        src: "https://player.vimeo.com/video/1145174249?background=1&autoplay=1&loop=1&muted=0",
         alt: "Kinx",
         categories: ["print", "digital"],
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
