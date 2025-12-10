@@ -77,8 +77,15 @@ const images = [
         group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
         text: "KINX, a leading Internet eXchange (IX) provider and data center operator in Korea, offers critical backbone infrastructure. Serving ISPs, content, cloud providers, and enterprises, not consumers, KINX emphasizes extensive domestic and international network connections. As Korea's intelligent internet backbone, KINX delivers seamless, direct interconnection at its neutral IX, accelerating network performance. Beyond bandwidth, KINX guarantees unwavering stability and continuous operation with robust, redundant data center and IX services, securing your digital foundation with resilient infrastructure engineered for maximum uptime and peace of mind."
     },
-
+ 
 {
+        src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
+        alt: "Glass_tooth",
+        categories: ["digital"],
+        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        text: "10 - This is the custom text that will appear in the lightbox."
+    },
+        {
         src: "https://lh3.googleusercontent.com/d/1I7S1LB7e2FaIMDz9Zz6Fm5Ipwug2uqmF=w1200",
         alt: "Kiiroo",
         categories: ["product"],
@@ -92,14 +99,6 @@ const images = [
                "https://lh3.googleusercontent.com/d/1oVAgt-LGHEZ-c2yrBK1CR80TYUje8_ns=w1200",
                "https://lh3.googleusercontent.com/d/1IhKghWcZDp9BvGZ3L-6CFYWaA20cd4uc=w1200"],
         text: "KIIROO pioneers adult entertainment technology, developing remote devices for synchronised intimate experiences. Their innovation transmits real-time touch sensations, often synced with video or other users, to bridge the physical gap in relationships. KIIROO empowers users to explore new dimensions of virtual intimacy, whether solo, with a partner, or with content creators, making connections feel more real and enhancing sexual experiences through technology."
-    },
- 
-{
-        src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
-        alt: "Glass_tooth",
-        categories: ["digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "10 - This is the custom text that will appear in the lightbox."
     },
         
  {
