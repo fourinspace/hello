@@ -28,7 +28,6 @@ const images = [
         
 {
         src: "https://lh3.googleusercontent.com/d/1AdDIXmg0w6pD2ylp7uYtNx1Abe-IsSWW=w1200",
-",
         alt: "30DII",
         categories: ["print"],
         group: ["https://lh3.googleusercontent.com/d/15FTIUfeVcqKgX-D7WNouuUOAzcj-2VRC=w1200",
