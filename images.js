@@ -23,7 +23,7 @@ const images = [
    { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
         alt: "Think",
         categories: ["print", "digital"],
-        group: ["https://player.vimeo.com/video/1144843108?background=1&autoplay=1&loop=1&muted=0",
+        group: ["https://player.vimeo.com/video/1144843108?background=1&autoplay=1&loop=1&muted=1",
                "https://lh3.googleusercontent.com/d/1wCmMpPfgLtoe5-eLQoRZE023ttGRRRLC=w1200"],
         text: "3 - This is the custom text that will appear in the lightbox."
     },
@@ -153,8 +153,8 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1c-H35RgNXWWiEODJMmWdXJYiuzSNBZVx=w1200",
         alt: "Sit App",
         categories: ["product design", "digital"],
-        group: ["https://player.vimeo.com/video/1144806303?background=1&autoplay=1&loop=1&muted=0",
-                "https://player.vimeo.com/video/1144842302?background=1&autoplay=1&loop=1&muted=0" ],
+        group: ["https://player.vimeo.com/video/1144806303?background=1&autoplay=1&loop=1&muted=1",
+                "https://player.vimeo.com/video/1144842302?background=1&autoplay=1&loop=1&muted=1" ],
 text: "SIT is a peer-to-peer mobile application for high-density, unreserved transit. It allows existing passengers to list their highly desired seat in real-time. Standing riders can purchase the immediate right of occupancy securely via the app. Using precise location and time tracking, SIT coordinates the exchange. Eliminate the stress of standing and guarantee comfort for the final leg. Secure, discreet payment ensures a seamless transition between riders. SIT turns an occupied spot into a guaranteed, purchasable seat"
     },
   
@@ -171,7 +171,7 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
  { src: "https://lh3.googleusercontent.com/d/12yh7OmQPdnBEHswGDG6-6HqUXB12-zOM=w1200",
         alt: "F*ck That Smile",
         categories: ["digital"],
-        group: ["https://player.vimeo.com/video/1144595845?background=1&autoplay=1&loop=1&muted=0",
+        group: ["https://player.vimeo.com/video/1144595845?background=1&autoplay=1&loop=1&muted=1",
             "https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200",
             "https://lh3.googleusercontent.com/d/1kjSC1Cq3ZJyi6uBe1CF1yWqAla9l_-d8=w1200",
             "https://lh3.googleusercontent.com/d/1cGf6mqDp5e4s6QV0IZwA7nvfin1FuDOi=w1200",
@@ -184,7 +184,7 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
 { src: "https://lh3.googleusercontent.com/d/1j9CGeOUhwHnYE1JNWCfQlpXl1ATJZWTh=w1200",
         alt: "Yaksu",
         categories: ["digital"],
-        group: ["https://player.vimeo.com/video/1146550548?background=1&autoplay=1&loop=1&muted=0"],
+        group: ["https://player.vimeo.com/video/1146550548?background=1&autoplay=1&loop=1&muted=1"],
         text: "19 - This is the custom text that will appear in the lightbox."
     },
 
