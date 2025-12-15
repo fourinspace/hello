@@ -184,7 +184,7 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
 { src: "https://lh3.googleusercontent.com/d/1j9CGeOUhwHnYE1JNWCfQlpXl1ATJZWTh=w1200",
         alt: "Yaksu",
         categories: ["digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
+        group: ["https://player.vimeo.com/video/1146550548?background=1&autoplay=1&loop=1&muted=0"],
         text: "19 - This is the custom text that will appear in the lightbox."
     },
 
