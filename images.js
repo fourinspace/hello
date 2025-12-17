@@ -181,14 +181,7 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
      text: "'f*ck that smile' is a personal odyssey: a defiant, raw view of self, rejecting external happiness for intensely personal truth. The artist's promise is self-provided happiness. Set in the introspective mountains of Castlenuovo Di Garfagnana and busy Tokyo, it follows an alien stranded on Earth after a crash. This wanderer seeks belonging but finds no solace. More than music, it's a profound inner struggle—physical displacement mirroring emotional rift. Each frame echoes defiance, inviting audiences to see the difficult path to authentic self-acceptance. f*ck that smile: The only smile that matters is your own."
     },
 
- { src: "https://lh3.googleusercontent.com/d/1JyZnc-qh_kyaajsnPHsc7elDSnbBMeqZ=w1200",
-        alt: "Yaksu",
-        categories: ["digital"],
-        group: ["https://player.vimeo.com/video/1147226036?background=1&autoplay=1&loop=1&muted=1",
-                "https://player.vimeo.com/video/1147226434?background=1&autoplay=1&loop=1&muted=1",
-                "https://player.vimeo.com/video/1146963343?background=1&autoplay=1&loop=1&muted=1" ],
-        text: "The New Reality: Online Life Made in a Way Offline Life Can Never Be. Create the world you want to live in, free from physical constraints. Here, you design your existence with all the comfort or discomfort you seek. Nothing is too crazy, and nothing is limited. This is your ultimate canvas: start building your life away from your daily life, and discover the true shape of your desires."
-    },
+ 
 
  { src: "https://lh3.googleusercontent.com/d/1YcTTIG9o4bVfpRpZZuYYuSYrFLfWHCUb=w1200",
         alt: "Prompt",
