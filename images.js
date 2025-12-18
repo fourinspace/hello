@@ -66,10 +66,9 @@ const images = [
   
 {
         src: "https://lh3.googleusercontent.com/d/1xhY84kuP02c1qq7ahx5Q44KfFfU-bLJu=w1200",
-        alt: "PLAUAT App",
-        categories: ["product design", "digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "7 - This is the custom text that will appear in the lightbox."
+        alt: "Time Capsule",
+        categories: ["print", "digital"],
+       
     },
         
      {
@@ -114,9 +113,7 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1eHsnGo3XG8R9-gItEXHnWNNzkwf4M9Gy=w1200",
         alt: "Guns'N'Roses",
         categories: ["digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "Guns N' Roses, the iconic American hard rock band of the late '80s, soared to fame with Axl Rose, Slash, and Duff McKagan, delivering raw energy and anthems like 'Sweet Child o' Mine.' Their 'Appetite for Destruction' remains a best-seller, solidifying their legendary status. Fans can rejoice as the band will embark on a highly anticipated 2026 tour, promising another high-octane spectacle, delivering timeless hits and fierce energy to their global fanbase."
-    },
+      
      {
         src: "https://lh3.googleusercontent.com/d/1emihWoLZYVphvLgbJI8iJ5udMeI93F0Y=w1200",
         alt: "Nike",
@@ -129,10 +126,8 @@ const images = [
   {
         src: "https://lh3.googleusercontent.com/d/1jt1a1GyDPq9OeYrgfxcVIXMTK3md0Sbl=w1200",
         alt: "Next Rise",
-        categories: ["product design", "digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "NextRise is South Korea's major startup conference, designed as a comprehensive platform. It connects startups with investors, corporations, and media to foster innovation, facilitate investment, and promote global collaboration. This event helps ventures, corporate investors, and other innovation stakeholders forge partnerships, secure funding, and gain unparalleled insights, serving as a gateway to the future of innovation."
-    },
+        categories: ["digital"],
+       },
 
  {
         src: "https://lh3.googleusercontent.com/d/1H8_lRyafliGnAOtn20LoAbxz8h3Ztz0n=w1200",
