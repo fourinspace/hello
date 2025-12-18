@@ -17,14 +17,13 @@ const images = [
                 "https://player.vimeo.com/video/1143850162?background=1&autoplay=1&loop=1&muted=1",
                 "https://player.vimeo.com/video/1143852429?background=1&autoplay=1&loop=1&muted=1"],
         text: "MAU (마우), a Korean footwear brand, specializes in comfortable, lightweight, and stylish casual sneakers. Their core philosophy, driven by a visually clean, contemporary aesthetic, centers on feather-light comfort and modern, minimalist design for everyday wear. Emphasizing simplicity, versatility, and ergonomic design, MAU shoes feature a unique 'MAU SOLE' and breathable materials in subtle, versatile tones, enhancing your look with sophisticated elegance and a natural walking feel."
-
     },
 
    { src: "https://lh3.googleusercontent.com/d/1PvqBPlD0JysbDoav79Zoa0SeXRkVCH95=w1200",
-        alt: "Think",
+        alt: "Time Capsule (Think Big)",
         categories: ["print", "digital"],
         group: ["https://player.vimeo.com/video/1144843108?background=1&autoplay=1&loop=1&muted=1",
-               "https://lh3.googleusercontent.com/d/1wCmMpPfgLtoe5-eLQoRZE023ttGRRRLC=w1200"],
+                "https://lh3.googleusercontent.com/d/1wCmMpPfgLtoe5-eLQoRZE023ttGRRRLC=w1200"],
         text: "3 - This is the custom text that will appear in the lightbox."
     },
         
@@ -40,7 +39,7 @@ const images = [
             "https://lh3.googleusercontent.com/d/1rbu6THSuW3DzBIBJXI0MmVY48Zpjsbjy=w1200",
             "https://lh3.googleusercontent.com/d/1ky8YgZzDVj4IVouvlf8YLbRjOJimsqn-=w1200",
             "https://lh3.googleusercontent.com/d/1hkt52J-1Ec2temdDGcoGBzZaicaoiO2n=w1200"],
-        text: "30DII (Thirty Days Immediate Inference) is not merely a project; it is a crucible of creativity. Over the span of a singular, intense month, artists spanning the globe are drawn into a shared, accelerated current. Each day unfurls a new task, a concentrated pulse challenging their immediate intuition and craft. These urgent responses—these visual murmurs and written whispers—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose.The core inquiry of 30DII lies in this deliberate compression: to sculpt art within a pressure cooker, to witness the raw, divergent bloom of creation when time, that most relentless of muses, demands an immediate answer."
+        text: "30DII (Thirty Days Immediate Inference) is not merely a project; it is a crucible of creativity. Over the span of a singular, intense month, artists all over the globe are drawn into a shared, accelerated current. Each day unfurls a new task, a concentrated pulse challenging their immediate intuition and craft. These urgent responses—these visual murmurs and written whispers—are then meticulously woven into a singular, tactile volume: a book blooming with both evocative imagery and incisive prose.The core inquiry of 30DII lies in this deliberate compression: to sculpt art within a pressure cooker, to witness the raw, divergent bloom of creation when time, that most relentless of muses, demands an immediate answer."
   },
 
 {
@@ -67,7 +66,7 @@ const images = [
 {
         src: "https://lh3.googleusercontent.com/d/1xhY84kuP02c1qq7ahx5Q44KfFfU-bLJu=w1200",
         alt: "Time Capsule",
-        categories: ["print", "digital"],
+        categories: ["print", "digital"]
        
     },
         
