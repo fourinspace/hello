@@ -98,8 +98,7 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
         alt: "Glass_tooth",
         categories: ["digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "10 - This is the custom text that will appear in the lightbox."
+      
     },
       
         
