@@ -204,8 +204,6 @@ text: "SIT is a peer-to-peer mobile application for high-density, unreserved tra
 { src: "https://lh3.googleusercontent.com/d/1citj8Zu7j3JEzF-B7kczQiYVg8n-PNqo=w1200",
         alt: "Stella Maris",
         categories: ["print", "digital"],
-        group: ["https://lh3.googleusercontent.com/d/1bv1-8DTuKQjDJV3ixN6IOK9CrP68qg79=w1200"],
-        text: "Stella Maris elevates every diver's experience with Korean digital precision. Guiding you with timeless elegance, our watches blend celestial inspiration with masterful craftsmanship. Crafted for those who navigate life's currents with unwavering style, Stella Maris timepieces are engineered for exceptional accuracy, enduring beauty, and reborn precision."
     },
 
         
