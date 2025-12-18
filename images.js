@@ -67,9 +67,8 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1xhY84kuP02c1qq7ahx5Q44KfFfU-bLJu=w1200",
         alt: "Time Capsule",
         categories: ["print", "digital"],
-        group: [], // FIXED: Added empty group
-        text: "",   // FIXED: Added empty text
-       
+        group: [], // FIXED: Added empty group to prevent crash
+        text: ""   // FIXED: Added empty text to prevent crash
     },
         
      {
@@ -98,6 +97,8 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1AdUvGtMf8am8vdEvKlYeGbiECrhO24KA=w1200",
         alt: "Glass_tooth",
         categories: ["digital"],
+        group: [], // FIXED: Added empty group to prevent crash
+        text: ""   // FIXED: Added empty text to prevent crash
       
     },
       
@@ -114,6 +115,8 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1eHsnGo3XG8R9-gItEXHnWNNzkwf4M9Gy=w1200",
         alt: "Guns'N'Roses",
         categories: ["digital"],
+        }, 
+         
       
      {
         src: "https://lh3.googleusercontent.com/d/1emihWoLZYVphvLgbJI8iJ5udMeI93F0Y=w1200",
@@ -128,6 +131,8 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1jt1a1GyDPq9OeYrgfxcVIXMTK3md0Sbl=w1200",
         alt: "Next Rise",
         categories: ["digital"],
+          group: [], // FIXED: Added empty group to prevent crash
+        text: ""   // FIXED: Added empty text to prevent crash
        },
 
  {
