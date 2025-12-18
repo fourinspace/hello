@@ -66,7 +66,9 @@ const images = [
 {
         src: "https://lh3.googleusercontent.com/d/1xhY84kuP02c1qq7ahx5Q44KfFfU-bLJu=w1200",
         alt: "Time Capsule",
-        categories: ["print", "digital"]
+        categories: ["print", "digital"],
+        group: [], // FIXED: Added empty group
+        text: "",   // FIXED: Added empty text
        
     },
         
