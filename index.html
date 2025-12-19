@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <script type="text/javascript">
-  if (window.innerWidth <= 768) {
-    // This uses a relative path that works better on GitHub Pages
-    window.location.replace("https://fourinspace.github.io/hello/mobile.html"); 
-  }
+<script type="text/javascript">
+  (function() {
+    // 1. Detect if the device is a handheld phone via User Agent
+    const isPhoneUA = /iPhone|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    // 2. Exclude iPads (iPadOS reports as 'Macintosh' but has touch points)
+    const isIPad = (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+    // 3. Screen width check (Phones are almost never wider than 480px in portrait)
+    const isSmallWidth = window.innerWidth <= 480;
+
+    // Logic: If it's a phone UA and NOT an iPad, or just a very small screen
+    if ((isPhoneUA && !isIPad) || isSmallWidth) {
+      window.location.replace("https://fourinspace.github.io/hello/mobile.html");
+    }
+  })();
 </script>
   <meta charset="utf-8" />
   <title>四</title>
