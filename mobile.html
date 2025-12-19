@@ -5,17 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>四 - Mobile</title>
   <style>
-    /* Remove all margins and scrollbars */
     body, html {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden; /* Keeps the video contained to the window */
+      overflow: hidden;
       background: #000;
     }
 
-    /* The wrapper ensures the video stays within the browser window */
     .video-container {
       position: relative;
       width: 100vw;
@@ -26,23 +24,36 @@
       overflow: hidden;
     }
 
-    /* The iframe is sized to cover the browser space */
     .video-container iframe {
       width: 100vw;
-      height: 56.25vw; /* 16:9 ratio */
+      height: 56.25vw;
       min-height: 100vh;
-      min-width: 177.77vh; /* 16:9 ratio */
+      min-width: 177.77vh;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      pointer-events: none; /* Prevents users from clicking into Vimeo */
+      pointer-events: none;
+    }
+
+    /* --- LOGO OVERLAY STYLES --- */
+    .logo-overlay {
+      position: absolute;
+      top: 40px; /* Distance from the top */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10; /* Ensures it stays above the video */
+      width: 120px; /* Adjust size as needed */
+      height: auto;
+      pointer-events: auto; /* Allows users to click the logo if you add a link later */
     }
   </style>
 </head>
 <body>
 
   <div class="video-container">
+    <img src="https://lh3.googleusercontent.com/d/17yyNeEpa9_xJ913p7SaxEynGgO2w7KGW=w1200" alt="four Logo" class="logo-overlay" />
+
     <iframe 
       src="https://player.vimeo.com/video/1147885676?background=1&autoplay=1&loop=1&muted=1" 
       frameborder="0" 
