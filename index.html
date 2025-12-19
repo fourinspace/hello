@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="text/javascript">
-    // This must be the first thing in the head
-    if (window.innerWidth <= 768) {
-      window.location.replace("mobile.html");
-    }
-  </script>
+ <script type="text/javascript">
+  // Detects small screen OR touch capability
+  if (window.innerWidth <= 768 || ('ontouchstart' in window)) {
+    window.location.replace("mobile.html");
+  }
+</script>
   <meta charset="utf-8" />
   <title>四</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
