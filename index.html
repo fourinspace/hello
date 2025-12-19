@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
  <script type="text/javascript">
-  // Detects small screen OR touch capability
-  if (window.innerWidth <= 768 || ('ontouchstart' in window)) {
-    window.location.replace("mobile.html");
+  if (window.innerWidth <= 768) {
+    // This uses a relative path that works better on GitHub Pages
+    window.location.replace("./mobile.html"); 
   }
 </script>
   <meta charset="utf-8" />
