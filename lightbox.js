@@ -79,9 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
           element.classList.add('lightbox-video');
           element.setAttribute('allow', 'autoplay; fullscreen');
           
-          // THESE TWO LINES FORCE 720p VIDEOS TO STRETCH TO THE SAME WIDTH AS IMAGES
+          // --- THE CRITICAL FIX IS HERE ---
           element.setAttribute('width', '100%');
           element.setAttribute('height', '100%');
+          // --------------------------------
           
         } else {
           element = document.createElement('img');
