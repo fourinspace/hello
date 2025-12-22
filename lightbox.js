@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       max-width: 1100px !important;
       margin: 0 auto !important;
       display: block !important;
-      border: none;
+      border: none !important; /* Removed all ghost borders */
     }
 
     .lightbox-img {
@@ -58,6 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
       padding-bottom: 56.25%; /* Forces 16:9 ratio based on WIDTH */
       height: 0;
       overflow: hidden;
+      background: #fff; /* Match page background */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .video-wrapper iframe {
@@ -67,6 +72,52 @@ document.addEventListener('DOMContentLoaded', () => {
       width: 100% !important;
       height: 100% !important;
       border: 0;
+      opacity: 0; /* Hidden until loaded */
+      transition: opacity 0.4s ease;
+      z-index: 2;
+    }
+
+    .video-wrapper iframe.loaded {
+      opacity: 1;
+    }
+
+    /* PIXEL LOADER STYLES */
+    .pixel-loader-ui {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .pixel-label {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #000;
+    }
+
+    .pixel-bar-outline {
+      width: 180px;
+      height: 16px;
+      border: 3px solid #000;
+      padding: 2px;
+      background: #fff;
+    }
+
+    .pixel-bar-fill {
+      height: 100%;
+      background: #000;
+      width: 0%;
+      animation: fillBar 2s steps(10) infinite;
+    }
+
+    @keyframes fillBar {
+      0% { width: 0%; }
+      50% { width: 100%; }
+      100% { width: 100%; }
     }
 
     .lightbox-text {
@@ -101,14 +152,38 @@ document.addEventListener('DOMContentLoaded', () => {
           const wrapper = document.createElement('div');
           wrapper.classList.add('video-wrapper');
 
-          // 2. Put the video inside it
+          // 2. Create the Loader UI
+          const loaderUI = document.createElement('div');
+          loaderUI.classList.add('pixel-loader-ui');
+          
+          const label = document.createElement('div');
+          label.classList.add('pixel-label');
+          label.innerText = "LOADING...";
+          
+          const barOutline = document.createElement('div');
+          barOutline.classList.add('pixel-bar-outline');
+          const barFill = document.createElement('div');
+          barFill.classList.add('pixel-bar-fill');
+          
+          barOutline.appendChild(barFill);
+          loaderUI.appendChild(label);
+          loaderUI.appendChild(barOutline);
+          wrapper.appendChild(loaderUI);
+
+          // 3. Put the video inside it
           const iframe = document.createElement('iframe');
           iframe.src = src;
           iframe.setAttribute('allow', 'autoplay; fullscreen');
           iframe.setAttribute('frameborder', '0');
           
+          // 4. Reveal video when loaded
+          iframe.onload = function() {
+            iframe.classList.add('loaded');
+            loaderUI.style.display = 'none';
+          };
+          
           wrapper.appendChild(iframe);
-          element = wrapper; // We add the whole box to the page
+          element = wrapper;
         } else {
           element = document.createElement('img');
           element.src = src;
