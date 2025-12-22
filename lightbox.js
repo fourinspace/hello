@@ -13,82 +13,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const style = document.createElement('style');
   style.textContent = `
-    body, button, input, textarea { font-family: 'Open Sans', sans-serif !important; }
+    body, button, input, textarea {
+      font-family: 'Open Sans', sans-serif !important;
+    }
 
     .lightbox-images-container {
-      flex: 1; overflow-y: auto; scrollbar-width: none; background: white;
-      display: flex; justify-content: center; align-items: flex-start; padding: 30px 0;
+      flex: 1;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px 0;
     }
 
     .lightbox-images {
-      display: flex; flex-direction: column; gap: 30px; width: 100%; align-items: center;
-    }
-
-    /* THE VIDEO WRAPPER & RETRO LOADER - Borders Removed */
-    .video-loader-container {
-      position: relative;
-      width: 90%;
-      max-width: 1100px;
-      aspect-ratio: 16 / 9;
-      background: #fff; /* Matches page background */
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      gap: 30px; /* Consistent gap between all media */
+      width: 100%;
       align-items: center;
-      border: none !important; /* Forces removal of any ghost borders */
     }
 
-    .pixel-label {
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-      color: #000;
-    }
-
-    .pixel-bar-outline {
-      width: 200px;
-      height: 18px;
-      border: 3px solid #000; /* This is the retro bar outline */
-      padding: 2px;
-      position: relative;
-      background: #fff;
-    }
-
-    .pixel-bar-fill {
-      height: 100%;
-      background: #000;
-      width: 0%;
-      animation: fillBar 2s steps(10) infinite;
-    }
-
-    @keyframes fillBar {
-      0% { width: 0%; }
-      50% { width: 100%; }
-      100% { width: 100%; }
-    }
-
-    /* Video Styling - Seamless */
+    /* THE MASTER WIDTH COMMAND */
+    .lightbox-img, 
     .lightbox-video {
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      position: absolute;
-      top: 0; left: 0; width: 100% !important; height: 100% !important;
-      z-index: 2;
-      border: none !important;
-      outline: none !important;
+      width: 90% !important;               
+      max-width: 1100px !important;
+      margin: 0 auto !important;
+      display: block !important;
+      border: none;
     }
-
-    .video-loaded { opacity: 1; }
 
     .lightbox-img {
-      width: 90%; max-width: 1100px; height: auto; display: block; border: none;
+      height: auto;
+    }
+
+    .lightbox-video {
+      /* Uses standard 16:9 but allows the browser to adjust if the video is slimmer */
+      aspect-ratio: 16 / 9;
+      height: auto !important; 
+      background: #fff; /* Matches your lightbox background */
     }
 
     .lightbox-text {
-      width: 250px; padding: 20px; background: white; position: sticky;
-      top: 50px; align-self: flex-start; border-left: 1px solid #eee; margin-left: 20px;
+      width: 250px;
+      padding: 20px;
+      background: white;
+      position: sticky;
+      top: 50px;
+      align-self: flex-start;
+      border-left: 1px solid #eee;
+      margin-left: 20px;
     }
   `;
   document.head.appendChild(style);
@@ -98,57 +76,45 @@ document.addEventListener('DOMContentLoaded', () => {
       const clickedSrc = event.data.src;
       lightboxImagesWrapper.innerHTML = "";
       const imgObj = images.find(img => img.src === clickedSrc);
+
       lightboxTextInner.textContent = (imgObj && imgObj.text) ? imgObj.text : "";
 
       let sources = (imgObj && imgObj.group && imgObj.group.length > 0) ? imgObj.group : [];
 
       sources.forEach((src, index) => {
+        let element;
         const isVideo = src.includes("player.vimeo.com");
 
         if (isVideo) {
-          const container = document.createElement('div');
-          container.classList.add('video-loader-container');
-
-          const label = document.createElement('div');
-          label.classList.add('pixel-label');
-          label.innerText = "LOADING...";
-          container.appendChild(label);
-
-          const barOutline = document.createElement('div');
-          barOutline.classList.add('pixel-bar-outline');
-          const barFill = document.createElement('div');
-          barFill.classList.add('pixel-bar-fill');
-          barOutline.appendChild(barFill);
-          container.appendChild(barOutline);
-
-          const iframe = document.createElement('iframe');
-          iframe.src = src;
-          iframe.classList.add('lightbox-video');
-          iframe.setAttribute('allow', 'autoplay; fullscreen');
-          iframe.setAttribute('frameborder', '0');
-
-          iframe.onload = function() {
-            iframe.classList.add('video-loaded');
-            label.style.display = 'none';
-            barOutline.style.display = 'none';
-          };
-
-          container.appendChild(iframe);
-          lightboxImagesWrapper.appendChild(container);
-
-        } else {
-          const img = document.createElement('img');
-          img.src = src;
-          img.classList.add('lightbox-img');
-          lightboxImagesWrapper.appendChild(img);
+          element = document.createElement('iframe');
+          element.src = src;
+          element.classList.add('lightbox-video');
+          element.setAttribute('allow', 'autoplay; fullscreen');
           
-          if (index === 0) {
-            img.onload = function() {
+          /* By setting these to 100%, the iframe fills the 90% width 
+             but the aspect-ratio in the CSS controls the height.
+          */
+          element.setAttribute('width', '100%');
+          element.setAttribute('height', '100%');
+        } else {
+          element = document.createElement('img');
+          element.src = src;
+          element.classList.add('lightbox-img');
+        }
+
+        lightboxImagesWrapper.appendChild(element);
+
+        if (!isVideo) {
+          element.onload = function() {
+            if (index === 0) {
               const isLandscape = this.naturalWidth > this.naturalHeight;
               lightboxContainer.classList.remove('landscape', 'portrait');
               lightboxContainer.classList.add(isLandscape ? 'landscape' : 'portrait');
-            };
-          }
+            }
+          };
+        } else if (index === 0) {
+          lightboxContainer.classList.remove('landscape', 'portrait');
+          lightboxContainer.classList.add('landscape');
         }
       });
 
