@@ -38,31 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
       align-items: center;
     }
 
-    /* THE SHARED COMMAND for both images and video containers */
     .lightbox-img, 
     .video-wrapper {
       width: 90% !important;               
       max-width: 1100px !important;
       margin: 0 auto !important;
       display: block !important;
-      border: none !important; /* Removed all ghost borders */
+      border: none !important;
     }
 
     .lightbox-img {
       height: auto;
     }
 
-    /* THE BOX THAT FORCES THE VIDEO TO BE BIG */
     .video-wrapper {
       position: relative;
-      padding-bottom: 56.25%; /* Forces 16:9 ratio based on WIDTH */
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
       height: 0;
       overflow: hidden;
-      background: #fff; /* Match page background */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background: #fff;
     }
 
     .video-wrapper iframe {
@@ -72,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       width: 100% !important;
       height: 100% !important;
       border: 0;
-      opacity: 0; /* Hidden until loaded */
+      opacity: 0;
       transition: opacity 0.4s ease;
       z-index: 2;
     }
@@ -81,9 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
       opacity: 1;
     }
 
-    /* PIXEL LOADER STYLES */
+    /* CENTERED PIXEL LOADER */
     .pixel-loader-ui {
       position: absolute;
+      /* These 3 lines force absolute centering */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -105,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
       border: 3px solid #000;
       padding: 2px;
       background: #fff;
+      box-sizing: content-box; /* Ensures border doesn't shrink the inner bar */
     }
 
     .pixel-bar-fill {
@@ -148,11 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const isVideo = src.includes("player.vimeo.com");
 
         if (isVideo) {
-          // 1. Create the "Force Box"
           const wrapper = document.createElement('div');
           wrapper.classList.add('video-wrapper');
 
-          // 2. Create the Loader UI
           const loaderUI = document.createElement('div');
           loaderUI.classList.add('pixel-loader-ui');
           
@@ -170,13 +168,11 @@ document.addEventListener('DOMContentLoaded', () => {
           loaderUI.appendChild(barOutline);
           wrapper.appendChild(loaderUI);
 
-          // 3. Put the video inside it
           const iframe = document.createElement('iframe');
           iframe.src = src;
           iframe.setAttribute('allow', 'autoplay; fullscreen');
           iframe.setAttribute('frameborder', '0');
           
-          // 4. Reveal video when loaded
           iframe.onload = function() {
             iframe.classList.add('loaded');
             loaderUI.style.display = 'none';
@@ -192,7 +188,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lightboxImagesWrapper.appendChild(element);
 
-        // Handle Landscape/Portrait switching
         if (!isVideo) {
           element.onload = function() {
             if (index === 0) {
