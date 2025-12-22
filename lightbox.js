@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImagesContainer = document.querySelector('.lightbox-images-container');
   const lightboxTextInner = document.querySelector('.lightbox-text-inner');
 
+  // Inject Open Sans font
   const fontLink = document.createElement('link');
   fontLink.rel = 'stylesheet';
   fontLink.href = 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
@@ -32,14 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
     .lightbox-images {
       display: flex;
       flex-direction: column;
-      gap: 30px; /* Consistent gap between all media */
+      gap: 20px;
       width: 100%;
       align-items: center;
     }
 
-    /* THE MASTER WIDTH COMMAND */
+    /* THE SHARED COMMAND for both images and video containers */
     .lightbox-img, 
-    .lightbox-video {
+    .video-wrapper {
       width: 90% !important;               
       max-width: 1100px !important;
       margin: 0 auto !important;
@@ -51,11 +52,21 @@ document.addEventListener('DOMContentLoaded', () => {
       height: auto;
     }
 
-    .lightbox-video {
-      /* Uses standard 16:9 but allows the browser to adjust if the video is slimmer */
-      aspect-ratio: 16 / 9;
-      height: auto !important; 
-      background: #fff; /* Matches your lightbox background */
+    /* THE BOX THAT FORCES THE VIDEO TO BE BIG */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* Forces 16:9 ratio based on WIDTH */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      border: 0;
     }
 
     .lightbox-text {
@@ -86,16 +97,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const isVideo = src.includes("player.vimeo.com");
 
         if (isVideo) {
-          element = document.createElement('iframe');
-          element.src = src;
-          element.classList.add('lightbox-video');
-          element.setAttribute('allow', 'autoplay; fullscreen');
+          // 1. Create the "Force Box"
+          const wrapper = document.createElement('div');
+          wrapper.classList.add('video-wrapper');
+
+          // 2. Put the video inside it
+          const iframe = document.createElement('iframe');
+          iframe.src = src;
+          iframe.setAttribute('allow', 'autoplay; fullscreen');
+          iframe.setAttribute('frameborder', '0');
           
-          /* By setting these to 100%, the iframe fills the 90% width 
-             but the aspect-ratio in the CSS controls the height.
-          */
-          element.setAttribute('width', '100%');
-          element.setAttribute('height', '100%');
+          wrapper.appendChild(iframe);
+          element = wrapper; // We add the whole box to the page
         } else {
           element = document.createElement('img');
           element.src = src;
@@ -104,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lightboxImagesWrapper.appendChild(element);
 
+        // Handle Landscape/Portrait switching
         if (!isVideo) {
           element.onload = function() {
             if (index === 0) {
