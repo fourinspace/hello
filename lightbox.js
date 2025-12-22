@@ -19,14 +19,68 @@ document.addEventListener('DOMContentLoaded', () => {
     body, button, input, textarea {
       font-family: 'Open Sans', sans-serif !important;
     }
-    .lightbox-video {
+
+    /* CONTAINER STYLES (Moved from HTML to JS) */
+    .lightbox-images-container {
+      flex: 1;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px 0;
+      scroll-padding-top: 30px;
+    }
+    .lightbox-images-container::-webkit-scrollbar { display: none; }
+
+    .lightbox-images {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-height: 100%;
+      justify-content: flex-start;
+      align-items: center;
       width: 100%;
-      max-width: 1200px;
-      aspect-ratio: 16/9;
-      display: block;
+      box-sizing: border-box;
+    }
+
+    /* THE SAME COMMAND FOR BOTH: Shared width trigger */
+    .lightbox-img, 
+    .lightbox-video {
+      width: 90%;               /* Adjust this one value to scale both together */
+      max-width: 1100px;
       margin: 0 auto;
+      display: block;
+      box-sizing: border-box;
       border: none;
     }
+
+    /* Specific height handling to keep them looking identical */
+    .lightbox-img {
+      height: auto;             /* Natural height based on width */
+      object-fit: contain;
+    }
+
+    .lightbox-video {
+      aspect-ratio: 16 / 9;     /* Standard video height based on width */
+    }
+
+    /* TEXT PANEL STYLES */
+    .lightbox-text {
+      width: 250px;
+      padding: 20px;
+      background: white;
+      position: sticky;
+      top: 50px;
+      align-self: flex-start;
+      border-left: 1px solid #eee;
+      height: fit-content;
+      margin-left: 20px;
+    }
+    .lightbox-text-inner { display: inline; }
   `;
   document.head.appendChild(style);
 
@@ -56,17 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       sources.forEach((src, index) => {
         let element;
-
         const isVideo = src.includes("player.vimeo.com");
 
         if (isVideo) {
-          // Vimeo iframe used INSTEAD of an <img>
           element = document.createElement('iframe');
           element.src = src;
           element.classList.add('lightbox-video');
           element.setAttribute('allow', 'autoplay; fullscreen');
         } else {
-          // Image
           element = document.createElement('img');
           element.src = src;
           element.classList.add('lightbox-img');
@@ -74,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lightboxImagesWrapper.appendChild(element);
 
-        // Orientation logic only for images
         if (!isVideo) {
           element.onload = function() {
             if (index === 0) {
@@ -84,7 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           };
         } else {
-          // Videos always treated as landscape
           if (index === 0) {
             lightboxContainer.classList.remove('landscape', 'portrait');
             lightboxContainer.classList.add('landscape');
