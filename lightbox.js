@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       font-family: 'Open Sans', sans-serif !important;
     }
     .lightbox-video {
-      width: 90%;
+      width: 100%;
       max-width: 1200px;
       aspect-ratio: 16/9;
       display: block;
