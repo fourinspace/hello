@@ -155,7 +155,8 @@ const images = [
         src: "https://lh3.googleusercontent.com/d/1c-H35RgNXWWiEODJMmWdXJYiuzSNBZVx=w1200",
         alt: "Sit App",
         categories: ["product design", "digital"],
-        group: ["https://player.vimeo.com/video/1144806303?background=1&autoplay=1&loop=1&muted=1",
+        group: ["https://lh3.googleusercontent.com/d/1F29XwKGc8cg1pVKRbFcgDbY05ax7tvJH=w1200"
+                "https://player.vimeo.com/video/1144806303?background=1&autoplay=1&loop=1&muted=1",
                 "https://player.vimeo.com/video/1144842302?background=1&autoplay=1&loop=1&muted=1" ],
 text: "SIT is a peer-to-peer mobile application for high-density, unreserved transit. It allows existing passengers to list their highly desired seat in real-time. Standing riders can purchase the immediate right of occupancy securely via the app. Using precise location and time tracking, SIT coordinates the exchange. Eliminate the stress of standing and guarantee comfort for the final leg. Secure, discreet payment ensures a seamless transition between riders. SIT turns an occupied spot into a guaranteed, purchasable seat"
     },
