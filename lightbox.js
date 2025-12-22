@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImagesContainer = document.querySelector('.lightbox-images-container');
   const lightboxTextInner = document.querySelector('.lightbox-text-inner');
 
-  // Inject Open Sans
   const fontLink = document.createElement('link');
   fontLink.rel = 'stylesheet';
   fontLink.href = 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
@@ -25,18 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
       display: flex; flex-direction: column; gap: 30px; width: 100%; align-items: center;
     }
 
-    /* THE VIDEO WRAPPER & RETRO LOADER */
+    /* THE VIDEO WRAPPER & RETRO LOADER - Borders Removed */
     .video-loader-container {
       position: relative;
       width: 90%;
       max-width: 1100px;
       aspect-ratio: 16 / 9;
-      background: #fff;
+      background: #fff; /* Matches page background */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1px solid #eee;
+      border: none !important; /* Forces removal of any ghost borders */
     }
 
     .pixel-label {
@@ -45,14 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
       font-size: 14px;
       margin-bottom: 10px;
       letter-spacing: 2px;
+      color: #000;
     }
 
     .pixel-bar-outline {
       width: 200px;
-      height: 20px;
-      border: 3px solid #000;
+      height: 18px;
+      border: 3px solid #000; /* This is the retro bar outline */
       padding: 2px;
       position: relative;
+      background: #fff;
     }
 
     .pixel-bar-fill {
@@ -68,19 +69,21 @@ document.addEventListener('DOMContentLoaded', () => {
       100% { width: 100%; }
     }
 
-    /* Video Styling */
+    /* Video Styling - Seamless */
     .lightbox-video {
       opacity: 0;
       transition: opacity 0.5s ease;
       position: absolute;
       top: 0; left: 0; width: 100% !important; height: 100% !important;
       z-index: 2;
+      border: none !important;
+      outline: none !important;
     }
 
     .video-loaded { opacity: 1; }
 
     .lightbox-img {
-      width: 90%; max-width: 1100px; height: auto; display: block;
+      width: 90%; max-width: 1100px; height: auto; display: block; border: none;
     }
 
     .lightbox-text {
@@ -103,17 +106,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const isVideo = src.includes("player.vimeo.com");
 
         if (isVideo) {
-          // 1. Create Container
           const container = document.createElement('div');
           container.classList.add('video-loader-container');
 
-          // 2. Add "LOADING..." Text
           const label = document.createElement('div');
           label.classList.add('pixel-label');
           label.innerText = "LOADING...";
           container.appendChild(label);
 
-          // 3. Add Pixel Bar
           const barOutline = document.createElement('div');
           barOutline.classList.add('pixel-bar-outline');
           const barFill = document.createElement('div');
@@ -121,17 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
           barOutline.appendChild(barFill);
           container.appendChild(barOutline);
 
-          // 4. Create Iframe
           const iframe = document.createElement('iframe');
           iframe.src = src;
           iframe.classList.add('lightbox-video');
           iframe.setAttribute('allow', 'autoplay; fullscreen');
           iframe.setAttribute('frameborder', '0');
 
-          // 5. Load Event
           iframe.onload = function() {
             iframe.classList.add('video-loaded');
-            // Hide the loader elements
             label.style.display = 'none';
             barOutline.style.display = 'none';
           };
