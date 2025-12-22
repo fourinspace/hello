@@ -340,58 +340,7 @@
       padding-bottom: 60px;
     }
 
-    /* Images wrapper inside the lightbox */
-    .lightbox-images-container {
-      flex: 1;
-      overflow-y: auto;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      background: white;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start; /* align items from top to avoid pushing first image out */
-      padding: 30px 0; /* breathing room */
-      scroll-padding-top: 30px;
-    }
-    .lightbox-images-container::-webkit-scrollbar { display: none; }
-
-    /* Stacked images — centered horizontally, start vertically */
-    .lightbox-images {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      min-height: 100%;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    /* Each image sizes itself — prevents push/resize of container */
-    .lightbox-img {
-      max-width: 90%;
-      max-height: 90vh;
-      margin: 0 auto;
-      display: block;
-      object-fit: contain;
-      box-sizing: border-box;
-    }
-
-    /* Lightbox Text (unchanged) */
-    .lightbox-text {
-      width: 250px;
-      padding: 20px;
-      background: white;
-      position: sticky;
-      top: 50px;
-      align-self: flex-start;
-      border-left: 1px solid #eee;
-      height: fit-content;
-      margin-left: 20px;
-    }
-
-    .lightbox-text-inner { display: inline; }
+   
 
     /* Lightbox Close Button (unchanged) */
     .lightbox-close {
