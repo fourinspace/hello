@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       font-family: 'Open Sans', sans-serif !important;
     }
 
-    /* CONTAINER STYLES (Moved from HTML to JS) */
+    /* CONTAINER STYLES */
     .lightbox-images-container {
       flex: 1;
       overflow-y: auto;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* THE SAME COMMAND FOR BOTH: Shared width trigger */
     .lightbox-img, 
     .lightbox-video {
-      width: 90%;               /* Adjust this one value to scale both together */
+      width: 90%;               
       max-width: 1100px;
       margin: 0 auto;
       display: block;
@@ -60,12 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Specific height handling to keep them looking identical */
     .lightbox-img {
-      height: auto;             /* Natural height based on width */
+      height: auto;             
       object-fit: contain;
     }
 
     .lightbox-video {
-      aspect-ratio: 16 / 9;     /* Standard video height based on width */
+      aspect-ratio: 16 / 9;     /* This forces the shape regardless of 720p/1080p */
     }
 
     /* TEXT PANEL STYLES */
@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
           element.src = src;
           element.classList.add('lightbox-video');
           element.setAttribute('allow', 'autoplay; fullscreen');
+          
+          // FIX: Force the iframe to fill the width/ratio defined in CSS
+          element.setAttribute('width', '100%');
+          element.setAttribute('height', '100%');
         } else {
           element = document.createElement('img');
           element.src = src;
