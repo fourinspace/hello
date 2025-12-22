@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
       font-family: 'Open Sans', sans-serif !important;
     }
 
-    .lightbox-images-container {
+    /* SCOPED TO LIGHTBOX ONLY */
+    #lightbox .lightbox-images-container {
       flex: 1;
       overflow-y: auto;
       scrollbar-width: none;
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       padding: 30px 0;
     }
 
-    .lightbox-images {
+    #lightbox .lightbox-images {
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -38,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       align-items: center;
     }
 
-    .lightbox-img, 
-    .video-wrapper {
+    #lightbox .lightbox-img, 
+    #lightbox .video-wrapper {
       width: 90% !important;               
       max-width: 1100px !important;
       margin: 0 auto !important;
@@ -47,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
       border: none !important;
     }
 
-    .lightbox-img {
+    #lightbox .lightbox-img {
       height: auto;
     }
 
-    .video-wrapper {
+    #lightbox .video-wrapper {
       position: relative;
       padding-bottom: 56.25%; 
       height: 0;
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       background: #fff;
     }
 
-    .video-wrapper iframe {
+    #lightbox .video-wrapper iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -67,16 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
       height: 100% !important;
       border: 0;
       opacity: 0;
-      transition: opacity 0.8s ease; /* Slightly slower fade for a smoother reveal */
+      transition: opacity 0.8s ease;
       z-index: 2;
     }
 
-    .video-wrapper iframe.loaded {
+    #lightbox .video-wrapper iframe.loaded {
       opacity: 1;
     }
 
-    /* CENTERED PIXEL LOADER */
-    .pixel-loader-ui {
+    #lightbox .pixel-loader-ui {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       z-index: 1;
     }
 
-    .pixel-label {
+    #lightbox .pixel-label {
       font-family: 'Courier New', Courier, monospace;
       font-weight: bold;
       font-size: 14px;
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
       color: #000;
     }
 
-    .pixel-bar-outline {
+    #lightbox .pixel-bar-outline {
       width: 180px;
       height: 16px;
       border: 3px solid #000;
@@ -105,21 +105,20 @@ document.addEventListener('DOMContentLoaded', () => {
       box-sizing: content-box;
     }
 
-    .pixel-bar-fill {
+    #lightbox .pixel-bar-fill {
       height: 100%;
       background: #000;
       width: 0%;
-      /* SLOWED DOWN: 4 seconds instead of 2, and more steps for a jittery retro feel */
       animation: fillBar 4s steps(15) infinite; 
     }
 
     @keyframes fillBar {
       0% { width: 0%; }
-      70% { width: 100%; } /* Bar stays full for the last 30% of the loop */
+      70% { width: 100%; }
       100% { width: 100%; }
     }
 
-    .lightbox-text {
+    #lightbox .lightbox-text {
       width: 250px;
       padding: 20px;
       background: white;
@@ -136,6 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (event.data.type === 'openLightbox') {
       const clickedSrc = event.data.src;
       lightboxImagesWrapper.innerHTML = "";
+      
+      // Ensure 'images' array is accessible (usually defined in data.js)
       const imgObj = images.find(img => img.src === clickedSrc);
 
       lightboxTextInner.textContent = (imgObj && imgObj.text) ? imgObj.text : "";
@@ -173,7 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
           iframe.setAttribute('frameborder', '0');
           
           iframe.onload = function() {
-            // DELAYED TRIGGER: Wait 600ms after 'load' to ensure video is visible
             setTimeout(() => {
               iframe.classList.add('loaded');
               loaderUI.style.display = 'none';
@@ -190,6 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lightboxImagesWrapper.appendChild(element);
 
+        // FULL original detection logic remains here
         if (!isVideo) {
           element.onload = function() {
             if (index === 0) {
