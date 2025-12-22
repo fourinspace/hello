@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     /* THE SHARED COMMAND: Width is the master trigger */
     .lightbox-img, 
     .lightbox-video {
-      width: 90%;               
-      max-width: 1100px;
-      margin: 0 auto;
-      display: block;
+      width: 90% !important;               
+      max-width: 1100px !important;
+      margin: 0 auto !important;
+      display: block !important;
       box-sizing: border-box;
       border: none;
     }
@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     .lightbox-video {
-      /* This forces the player to follow the width, not the video quality */
-      aspect-ratio: 16 / 9;
-      height: auto; 
+      /* This combination forces the player to follow the width, not the video resolution */
+      aspect-ratio: 16 / 9 !important;
+      height: auto !important; 
     }
 
     /* TEXT PANEL STYLES */
