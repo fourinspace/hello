@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
       font-family: 'Open Sans', sans-serif !important;
     }
 
-    /* CONTAINER STYLES */
     .lightbox-images-container {
       flex: 1;
       overflow-y: auto;
@@ -29,47 +28,39 @@ document.addEventListener('DOMContentLoaded', () => {
       justify-content: center;
       align-items: flex-start;
       padding: 30px 0;
-      scroll-padding-top: 30px;
     }
     .lightbox-images-container::-webkit-scrollbar { display: none; }
 
     .lightbox-images {
-      padding: 0;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      min-height: 100%;
-      justify-content: flex-start;
-      align-items: center;
+      gap: 30px; 
       width: 100%;
-      box-sizing: border-box;
+      align-items: center;
     }
 
-    /* THE SHARED COMMAND: Width is the master trigger */
+    /* THE WIDTH-ONLY COMMAND */
     .lightbox-img, 
     .lightbox-video {
       width: 90% !important;               
       max-width: 1100px !important;
+      min-width: 90% !important; 
       margin: 0 auto !important;
       display: block !important;
-      box-sizing: border-box;
-      border: none;
+      border: none !important;
     }
 
+    /* Images stay proportional */
     .lightbox-img {
-      height: auto;
+      height: auto !important;
     }
 
+    /* Videos stay proportional by REMOVING aspect-ratio and fixed heights */
     .lightbox-video {
-      /* 'auto' allows the video to set its own height based on content */
-      /* This removes white bars for non-16:9 videos */
-      aspect-ratio: auto; 
-      height: auto !important; 
-      min-height: 300px; /* Ensures visibility while loading */
+      /* No height or aspect-ratio commands here */
       background: #fff;
     }
 
-    /* TEXT PANEL STYLES */
     .lightbox-text {
       width: 250px;
       padding: 20px;
@@ -78,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
       top: 50px;
       align-self: flex-start;
       border-left: 1px solid #eee;
-      height: fit-content;
       margin-left: 20px;
     }
     .lightbox-text-inner { display: inline; }
@@ -88,20 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('message', function(event) {
     if (event.data.type === 'openLightbox') {
       const clickedSrc = event.data.src;
-
-      // Clear previous content
       lightboxImagesWrapper.innerHTML = "";
-
       const imgObj = images.find(img => img.src === clickedSrc);
 
-      // Set text
-      if (imgObj && imgObj.text) {
-        lightboxTextInner.textContent = imgObj.text;
-      } else {
-        lightboxTextInner.textContent = "";
-      }
+      lightboxTextInner.textContent = (imgObj && imgObj.text) ? imgObj.text : "";
 
-      // Load group
       let sources = (imgObj && imgObj.group && imgObj.group.length > 0) ? imgObj.group : [];
 
       sources.forEach((src, index) => {
@@ -114,9 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
           element.classList.add('lightbox-video');
           element.setAttribute('allow', 'autoplay; fullscreen');
           
-          // These attributes allow the iframe to expand to our 90% CSS width
+          // Only trigger width via attribute as a fallback
           element.setAttribute('width', '100%');
-          element.setAttribute('height', '100%');
+          // WE ARE PURPOSELY NOT SETTING HEIGHT
         } else {
           element = document.createElement('img');
           element.src = src;
@@ -133,11 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
               lightboxContainer.classList.add(isLandscape ? 'landscape' : 'portrait');
             }
           };
-        } else {
-          if (index === 0) {
-            lightboxContainer.classList.remove('landscape', 'portrait');
-            lightboxContainer.classList.add('landscape');
-          }
+        } else if (index === 0) {
+          lightboxContainer.classList.remove('landscape', 'portrait');
+          lightboxContainer.classList.add('landscape');
         }
       });
 
@@ -146,13 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  lightboxClose.onclick = () => {
-    lightbox.style.display = 'none';
-  };
-
-  window.onclick = (event) => {
-    if (event.target === lightbox) {
-      lightbox.style.display = 'none';
-    }
-  };
+  lightboxClose.onclick = () => { lightbox.style.display = 'none'; };
+  window.onclick = (event) => { if (event.target === lightbox) { lightbox.style.display = 'none'; } };
 });
