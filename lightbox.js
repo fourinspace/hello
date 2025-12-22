@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     .video-wrapper {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      padding-bottom: 56.25%; 
       height: 0;
       overflow: hidden;
       background: #fff;
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       height: 100% !important;
       border: 0;
       opacity: 0;
-      transition: opacity 0.4s ease;
+      transition: opacity 0.8s ease; /* Slightly slower fade for a smoother reveal */
       z-index: 2;
     }
 
@@ -78,11 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
     /* CENTERED PIXEL LOADER */
     .pixel-loader-ui {
       position: absolute;
-      /* These 3 lines force absolute centering */
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -104,19 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
       border: 3px solid #000;
       padding: 2px;
       background: #fff;
-      box-sizing: content-box; /* Ensures border doesn't shrink the inner bar */
+      box-sizing: content-box;
     }
 
     .pixel-bar-fill {
       height: 100%;
       background: #000;
       width: 0%;
-      animation: fillBar 2s steps(10) infinite;
+      /* SLOWED DOWN: 4 seconds instead of 2, and more steps for a jittery retro feel */
+      animation: fillBar 4s steps(15) infinite; 
     }
 
     @keyframes fillBar {
       0% { width: 0%; }
-      50% { width: 100%; }
+      70% { width: 100%; } /* Bar stays full for the last 30% of the loop */
       100% { width: 100%; }
     }
 
@@ -174,8 +173,11 @@ document.addEventListener('DOMContentLoaded', () => {
           iframe.setAttribute('frameborder', '0');
           
           iframe.onload = function() {
-            iframe.classList.add('loaded');
-            loaderUI.style.display = 'none';
+            // DELAYED TRIGGER: Wait 600ms after 'load' to ensure video is visible
+            setTimeout(() => {
+              iframe.classList.add('loaded');
+              loaderUI.style.display = 'none';
+            }, 600);
           };
           
           wrapper.appendChild(iframe);
