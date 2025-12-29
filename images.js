@@ -137,7 +137,7 @@ const images = [
        },
 
  {
-        src: "https://lh3.googleusercontent.com/d/1H8_lRyafliGnAOtn20LoAbxz8h3Ztz0n=w1200",
+        src: "https://lh3.googleusercontent.com/d/17RS9CINiphykYIf2YvPI7-dfT6QvVK7v=w1200",
         alt: "Artinus",
         categories: ["digital"],
         group: ["https://lh3.googleusercontent.com/d/1FytNOBzF0bw0S6d_gKEQ-1dClOrSR5re=w1200",
