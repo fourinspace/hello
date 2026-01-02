@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contentArea = document.getElementById('contentArea');
   const homeBtn = document.getElementById('homeBtn');
   const workBtn = document.querySelector('#workItem .menu-btn');
-  const initialVideoURL = "https://stream.mux.com/q00jL1eCze5gsW3wRIBqDkP4x2xPGlcacZc1FUULt7Jo.m3u8";
+  const initialVideoURL = "https://player.vimeo.com/video/1150963952?background=1&autoplay=1&loop=1&muted=1";
   const headerWorkMenu = document.getElementById('headerWorkMenu'); 
   const aboutItem = document.getElementById('aboutItem');
   const contactItem = document.getElementById('contactItem');
