@@ -78,6 +78,13 @@ const images = [
         
         text: "KINX, a leading Internet eXchange (IX) provider and data center operator in Korea, offers critical backbone infrastructure. Serving ISPs, content, cloud providers, and enterprises, not consumers, KINX emphasizes extensive domestic and international network connections. As Korea's intelligent internet backbone, KINX delivers seamless, direct interconnection at its neutral IX, accelerating network performance. Beyond bandwidth, KINX guarantees unwavering stability and continuous operation with robust, redundant data center and IX services, securing your digital foundation with resilient infrastructure engineered for maximum uptime and peace of mind."
     },
+
+{
+        src: "https://lh3.googleusercontent.com/d/1IhLdXRQG0zwkWAcXgYS9NuI90cl43jRq=w1200",
+        alt: "Trunc Organism Filling Space",
+        categories: ["print"],
+        }, 
+        
    {
         src: "https://lh3.googleusercontent.com/d/1I7S1LB7e2FaIMDz9Zz6Fm5Ipwug2uqmF=w1200",
         alt: "Kiiroo",
