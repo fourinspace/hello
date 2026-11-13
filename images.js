@@ -118,12 +118,6 @@ const images = [
                 "https://lh3.googleusercontent.com/d/1ObEtPOWecJuZ_FcmETSf2eJlCUZCx15j=w1200"],
         text: "Jerrican eyewear elevates your style with contemporary design and timeless elegance. Each meticulously crafted frame offers unparalleled clarity and flair, engineered for lightweight comfort, exceptional durability, and a perfect everyday fit. Discover Jerrican: eyewear that truly reflects your ambition, leisure, and unmistakable charm. See the style. Feel the difference."
     },
-  
- {
-        src: "https://lh3.googleusercontent.com/d/1IhLdXRQG0zwkWAcXgYS9NuI90cl43jRq=w1200",
-        alt: "Trunc Organism Filling Space",
-        categories: ["print"],
-        }, 
          
       
      {
