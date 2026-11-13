@@ -113,9 +113,9 @@ const images = [
     },
   
  {
-        src: "https://lh3.googleusercontent.com/d/1eHsnGo3XG8R9-gItEXHnWNNzkwf4M9Gy=w1200",
-        alt: "Guns'N'Roses",
-        categories: ["digital"],
+        src: "https://lh3.googleusercontent.com/d/1IhLdXRQG0zwkWAcXgYS9NuI90cl43jRq=w1200",
+        alt: "Trunc Organism Filling Space",
+        categories: ["print"],
         }, 
          
       
